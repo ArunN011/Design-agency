@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Analytics | Stackly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="analytics.css">
+</head>
+
+<body>
+
+    <aside
+        class="stackly-analytics-sidebar"
+        id="analyticsSidebar"
+    >
+
+        <div class="stackly-analytics-brand">
+            <a href="admin-dashboard.html">
+                <img
+                    src="Assest/whitelogo.webp"
+                    alt="Stackly Design Agency"
+                    class="stackly-analytics-logo"
+                >
+            </a>
+        </div>
+
+        <div class="stackly-analytics-user">
+
+            <div class="stackly-analytics-user-icon">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+
+            <div class="stackly-analytics-user-info">
+
+                <strong id="sidebarAdminEmail">
+                    admin@stackly.com
+                </strong>
+
+                <span id="sidebarAdminRole">
+                    Admin
+                </span>
+
+            </div>
+
+        </div>
+
+        <nav class="stackly-analytics-nav">
+
+            <div class="stackly-analytics-group">
+
+                <span class="stackly-analytics-label">
+                    OVERVIEW
+                </span>
+
+                <a
+                    href="admin-dashboard.html"
+                    class="stackly-analytics-link"
+                >
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+
+            </div>
+
+            <div class="stackly-analytics-group">
+
+                <span class="stackly-analytics-label">
+                    MANAGEMENT
+                </span>
+
+                <a
+                    href="message.html"
+                    class="stackly-analytics-link"
+                >
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Messages</span>
+
+                    <strong class="stackly-analytics-count">
+                        3
+                    </strong>
+                </a>
+
+                <a
+                    href="projects.html"
+                    class="stackly-analytics-link"
+                >
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Projects</span>
+                </a>
+            </div>
+
+            <div class="stackly-analytics-group">
+
+                <span class="stackly-analytics-label">
+                    SYSTEM
+                </span>
+
+                <a
+                    href="analytics.html"
+                    class="stackly-analytics-link active"
+                >
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>Analytics</span>
+                </a>
+
+            
+
+            </div>
+
+        </nav>
+
+        <div class="stackly-analytics-sidebar-bottom">
+
+            <a
+                href="login.html"
+                class="stackly-analytics-link"
+                id="analyticsLogout"
+            >
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+    <div
+        class="stackly-analytics-overlay"
+        id="analyticsOverlay"
+    ></div>
+
+    <main class="stackly-analytics-main">
+
+        <header class="stackly-analytics-header">
+
+            <div class="stackly-analytics-header-left">
+
+                <button
+                    type="button"
+                    class="stackly-analytics-menu-button"
+                    id="analyticsMenuButton"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="stackly-analytics-page-title">
+
+                    <span>
+                        SYSTEM
+                    </span>
+
+                    <h1>
+                        Analytics
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <a
+                href="admin-dashboard.html"
+                class="stackly-analytics-mobile-brand"
+            >
+                <img
+                    src="Assest/whitelogo.webp"
+                    alt="Stackly Design Agency"
+                    class="stackly-analytics-mobile-logo"
+                >
+            </a>
+
+            <div class="stackly-analytics-header-actions">
+
+                <button
+                    type="button"
+                    class="stackly-analytics-header-button"
+                    aria-label="Search"
+                >
+                <a href="error.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </button>
+
+                <button
+                    type="button"
+                    class="stackly-analytics-header-button"
+                    aria-label="Notifications"
+                >
+                <a href="error.html">
+                    <i class="fa-regular fa-bell"></i>
+                    </a>
+
+                    <span class="stackly-analytics-notification-dot"></span>
+                </button>
+
+                <div class="stackly-analytics-profile">
+
+                    <div class="stackly-analytics-profile-icon">
+                        <a href="error.html">
+                        <i class="fa-solid fa-user-shield"></i>
+                        </a>
+                    </div>
+
+                    <div class="stackly-analytics-profile-text">
+
+                        <strong id="headerAdminName">
+                            Admin
+                        </strong>
+
+                        <span id="headerAdminRole">
+                            Administrator
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="stackly-analytics-content">
+
+            <div class="stackly-analytics-intro">
+
+                <div class="stackly-analytics-intro-copy">
+
+                    <span class="stackly-analytics-kicker">
+                        PERFORMANCE
+                    </span>
+
+                    <h2>
+                        See What Moves.
+                    </h2>
+
+                    <p>
+                        Track project performance, team productivity,
+                        client activity and overall workspace growth.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="stackly-analytics-period"
+                    id="periodButton"
+                >
+                    <span id="periodText">
+                        Last 30 Days
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+            </div>
+
+            <div class="stackly-analytics-stats">
+
+                <article class="stackly-analytics-stat">
+
+                    <div class="stackly-analytics-stat-icon lime">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+
+                    <div>
+                        <span>
+                            TOTAL REVENUE
+                        </span>
+
+                        <strong>
+                            ₹8.4L
+                        </strong>
+
+                        <small class="positive">
+                            +18.6%
+                        </small>
+                    </div>
+
+                </article>
+
+                <article class="stackly-analytics-stat">
+
+                    <div class="stackly-analytics-stat-icon dark">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <div>
+                        <span>
+                            PROJECT VALUE
+                        </span>
+
+                        <strong>
+                            ₹24.8L
+                        </strong>
+
+                        <small class="positive">
+                            +12.2%
+                        </small>
+                    </div>
+
+                </article>
+
+                <article class="stackly-analytics-stat">
+
+                    <div class="stackly-analytics-stat-icon beige">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <span>
+                            AVG. DELIVERY
+                        </span>
+
+                        <strong>
+                            18d
+                        </strong>
+
+                        <small class="positive">
+                            3d faster
+                        </small>
+                    </div>
+
+                </article>
+
+                <article class="stackly-analytics-stat">
+
+                    <div class="stackly-analytics-stat-icon outline">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div>
+                        <span>
+                            CLIENT SCORE
+                        </span>
+
+                        <strong>
+                            4.8
+                        </strong>
+
+                        <small class="positive">
+                            +0.3 this month
+                        </small>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="stackly-analytics-main-grid">
+
+                <section class="stackly-analytics-card stackly-revenue-card">
+
+                    <div class="stackly-analytics-card-header">
+
+                        <div>
+                            <span>
+                                FINANCIAL PERFORMANCE
+                            </span>
+
+                            <h3>
+                                Revenue Overview
+                            </h3>
+                        </div>
+
+                        <div class="stackly-chart-legend">
+
+                            <span>
+                                <i></i>
+                                Revenue
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-revenue-summary">
+
+                        <div>
+                            <strong>
+                                ₹8,42,500
+                            </strong>
+
+                            <span>
+                                Total revenue
+                            </span>
+                        </div>
+
+                        <div class="stackly-revenue-growth">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            18.6%
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-line-chart">
+
+                        <div class="stackly-chart-y">
+
+                            <span>
+                                10L
+                            </span>
+
+                            <span>
+                                7.5L
+                            </span>
+
+                            <span>
+                                5L
+                            </span>
+
+                            <span>
+                                2.5L
+                            </span>
+
+                            <span>
+                                0
+                            </span>
+
+                        </div>
+
+                        <div class="stackly-chart-area">
+
+                            <div class="stackly-chart-grid-line line-1"></div>
+                            <div class="stackly-chart-grid-line line-2"></div>
+                            <div class="stackly-chart-grid-line line-3"></div>
+                            <div class="stackly-chart-grid-line line-4"></div>
+                            <div class="stackly-chart-grid-line line-5"></div>
+
+                            <svg
+                                viewBox="0 0 800 260"
+                                preserveAspectRatio="none"
+                                class="stackly-revenue-svg"
+                            >
+
+                                <defs>
+
+                                    <linearGradient
+                                        id="revenueFill"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1"
+                                    >
+                                        <stop
+                                            offset="0%"
+                                            stop-color="rgba(184,255,51,0.30)"
+                                        />
+
+                                        <stop
+                                            offset="100%"
+                                            stop-color="rgba(184,255,51,0)"
+                                        />
+                                    </linearGradient>
+
+                                </defs>
+
+                                <path
+                                    class="revenue-area"
+                                    d="M0,215
+                                    C50,208 75,180 120,187
+                                    C170,195 205,165 250,170
+                                    C300,175 325,140 370,147
+                                    C420,154 455,117 500,128
+                                    C550,140 575,105 625,111
+                                    C670,118 700,74 750,88
+                                    C770,93 785,75 800,58
+                                    L800,260
+                                    L0,260 Z"
+                                ></path>
+
+                                <path
+                                    class="revenue-line"
+                                    d="M0,215
+                                    C50,208 75,180 120,187
+                                    C170,195 205,165 250,170
+                                    C300,175 325,140 370,147
+                                    C420,154 455,117 500,128
+                                    C550,140 575,105 625,111
+                                    C670,118 700,74 750,88
+                                    C770,93 785,75 800,58"
+                                ></path>
+
+                                <circle
+                                    cx="800"
+                                    cy="58"
+                                    r="5"
+                                    class="revenue-point"
+                                ></circle>
+
+                            </svg>
+
+                            <div class="stackly-chart-x">
+
+                                <span>May</span>
+                                <span>Jun</span>
+                                <span>Jul</span>
+                                <span>Aug</span>
+                                <span>Sep</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="stackly-analytics-card stackly-project-performance">
+
+                    <div class="stackly-analytics-card-header">
+
+                        <div>
+                            <span>
+                                PROJECT HEALTH
+                            </span>
+
+                            <h3>
+                                Delivery Status
+                            </h3>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-analytics-more"
+                        >
+                        <a href="error.html">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </button>
+
+                    </div>
+
+                    <div class="stackly-donut-wrap">
+
+                        <div class="stackly-donut">
+
+                            <div class="stackly-donut-center">
+                                <strong>
+                                    87%
+                                </strong>
+
+                                <span>
+                                    On Track
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-donut-legend">
+
+                        <div>
+
+                            <span class="legend-dot on-track"></span>
+
+                            <span>
+                                On Track
+                            </span>
+
+                            <strong>
+                                14
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <span class="legend-dot review"></span>
+
+                            <span>
+                                In Review
+                            </span>
+
+                            <strong>
+                                5
+                            </strong>
+
+                        </div>
+
+                        <div>
+
+                            <span class="legend-dot delayed"></span>
+
+                            <span>
+                                Delayed
+                            </span>
+
+                            <strong>
+                                2
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="stackly-analytics-bottom-grid">
+
+                <section class="stackly-analytics-card stackly-client-card">
+
+                    <div class="stackly-analytics-card-header">
+
+                        <div>
+                            <span>
+                                CLIENT INSIGHTS
+                            </span>
+
+                            <h3>
+                                Client Growth
+                            </h3>
+                        </div>
+
+                        <span class="stackly-header-value">
+                            +24%
+                        </span>
+
+                    </div>
+
+                    <div class="stackly-bar-chart">
+
+                        <div class="stackly-bar-y">
+
+                            <span>
+                                100
+                            </span>
+
+                            <span>
+                                75
+                            </span>
+
+                            <span>
+                                50
+                            </span>
+
+                            <span>
+                                25
+                            </span>
+
+                            <span>
+                                0
+                            </span>
+
+                        </div>
+
+                        <div class="stackly-bars-area">
+
+                            <div class="stackly-bar-grid"></div>
+
+                            <div class="analytics-bar-group">
+                                <span class="analytics-bar" style="height:38%"></span>
+                                <small>May</small>
+                            </div>
+
+                            <div class="analytics-bar-group">
+                                <span class="analytics-bar" style="height:48%"></span>
+                                <small>Jun</small>
+                            </div>
+
+                            <div class="analytics-bar-group">
+                                <span class="analytics-bar" style="height:55%"></span>
+                                <small>Jul</small>
+                            </div>
+
+                            <div class="analytics-bar-group">
+                                <span class="analytics-bar" style="height:68%"></span>
+                                <small>Aug</small>
+                            </div>
+
+                            <div class="analytics-bar-group">
+                                <span class="analytics-bar highlight" style="height:82%"></span>
+                                <small>Sep</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="stackly-analytics-card stackly-service-card">
+
+                    <div class="stackly-analytics-card-header">
+
+                        <div>
+                            <span>
+                                SERVICES
+                            </span>
+
+                            <h3>
+                                Performance
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-service-list">
+
+                        <div class="stackly-service-row">
+
+                            <div class="stackly-service-name">
+
+                                <span class="service-number">
+                                    01
+                                </span>
+
+                                <strong>
+                                    Brand Strategy
+                                </strong>
+
+                            </div>
+
+                            <div class="stackly-service-progress">
+
+                                <div>
+                                    <span style="width:92%"></span>
+                                </div>
+
+                                <strong>
+                                    92%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stackly-service-row">
+
+                            <div class="stackly-service-name">
+
+                                <span class="service-number">
+                                    02
+                                </span>
+
+                                <strong>
+                                    Product Design
+                                </strong>
+
+                            </div>
+
+                            <div class="stackly-service-progress">
+
+                                <div>
+                                    <span style="width:86%"></span>
+                                </div>
+
+                                <strong>
+                                    86%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stackly-service-row">
+
+                            <div class="stackly-service-name">
+
+                                <span class="service-number">
+                                    03
+                                </span>
+
+                                <strong>
+                                    Digital Experience
+                                </strong>
+
+                            </div>
+
+                            <div class="stackly-service-progress">
+
+                                <div>
+                                    <span style="width:79%"></span>
+                                </div>
+
+                                <strong>
+                                    79%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stackly-service-row">
+
+                            <div class="stackly-service-name">
+
+                                <span class="service-number">
+                                    04
+                                </span>
+
+                                <strong>
+                                    Development
+                                </strong>
+
+                            </div>
+
+                            <div class="stackly-service-progress">
+
+                                <div>
+                                    <span style="width:74%"></span>
+                                </div>
+
+                                <strong>
+                                    74%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <section class="stackly-analytics-card stackly-engagement-card">
+
+                <div class="stackly-analytics-card-header">
+
+                    <div>
+                        <span>
+                            WORKSPACE ACTIVITY
+                        </span>
+
+                        <h3>
+                            Monthly Engagement
+                        </h3>
+                    </div>
+
+                    <div class="stackly-engagement-total">
+
+                        <span>
+                            TOTAL ACTIONS
+                        </span>
+
+                        <strong>
+                            1,842
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div class="stackly-engagement-grid">
+
+                    <div class="stackly-engagement-stat">
+
+                        <div class="stackly-engagement-icon lime">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                482
+                            </strong>
+
+                            <span>
+                                Messages
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-engagement-stat">
+
+                        <div class="stackly-engagement-icon dark">
+                            <i class="fa-solid fa-file-arrow-up"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                318
+                            </strong>
+
+                            <span>
+                                Uploads
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-engagement-stat">
+
+                        <div class="stackly-engagement-icon beige">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                626
+                            </strong>
+
+                            <span>
+                                Tasks
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-engagement-stat">
+
+                        <div class="stackly-engagement-icon outline">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                416
+                            </strong>
+
+                            <span>
+                                Reviews
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="analytics.js"></script>
+
+</body>
+</html>

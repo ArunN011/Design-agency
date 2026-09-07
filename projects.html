@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Projects | Stackly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+
+    <aside
+        class="stackly-project-sidebar"
+        id="projectSidebar"
+    >
+
+        <div class="stackly-project-brand">
+
+            <a href="admin-dashboard.html">
+
+                <img
+                    src="Assest/whitelogo.webp"
+                    alt="Stackly Design Agency"
+                    class="stackly-project-logo"
+                >
+
+            </a>
+
+        </div>
+
+        <div class="stackly-project-user">
+
+            <div class="stackly-project-user-icon">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+
+            <div class="stackly-project-user-info">
+
+                <strong id="sidebarAdminEmail">
+                    admin@stackly.com
+                </strong>
+
+                <span id="sidebarAdminRole">
+                    Admin
+                </span>
+
+            </div>
+
+        </div>
+
+        <nav class="stackly-project-nav">
+
+            <div class="stackly-project-group">
+
+                <span class="stackly-project-label">
+                    OVERVIEW
+                </span>
+
+                <a
+                    href="admin-dashboard.html"
+                    class="stackly-project-link"
+                >
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+
+            </div>
+
+            <div class="stackly-project-group">
+
+                <span class="stackly-project-label">
+                    MANAGEMENT
+                </span>
+
+               
+
+                <a
+                    href="projects.html"
+                    class="stackly-project-link active"
+                >
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Projects</span>
+                </a>
+
+               
+
+            </div>
+
+            <div class="stackly-project-group">
+
+                <span class="stackly-project-label">
+                    SYSTEM
+                </span>
+
+                <a
+                    href="analytics.html"
+                    class="stackly-project-link"
+                >
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>Analytics</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+        <div class="stackly-project-sidebar-bottom">
+
+            <a
+                href="login.html"
+                class="stackly-project-link"
+                id="projectLogout"
+            >
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+    <div
+        class="stackly-project-overlay"
+        id="projectOverlay"
+    ></div>
+
+    <main class="stackly-project-main">
+
+        <header class="stackly-project-header">
+
+            <div class="stackly-project-header-left">
+
+                <button
+                    type="button"
+                    class="stackly-project-menu-button"
+                    id="projectMenuButton"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                >
+               
+                    <i class="fa-solid fa-bars"></i>
+                
+                </button>
+
+                <div class="stackly-project-page-title">
+
+                    <span>
+                        MANAGEMENT
+                    </span>
+
+                    <h1>
+                        Projects
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <a
+                href="admin-dashboard.html"
+                class="stackly-project-mobile-brand"
+            >
+
+                <img
+                    src="Assest/whitelogo.webp"
+                    alt="Stackly Design Agency"
+                    class="stackly-project-mobile-logo"
+                >
+
+            </a>
+
+            <div class="stackly-project-header-actions">
+
+                <button
+                    type="button"
+                    class="stackly-project-header-button"
+                    aria-label="Search"
+                >
+                <a href="error.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </button>
+
+                <button
+                    type="button"
+                    class="stackly-project-header-button"
+                    aria-label="Notifications"
+                >
+                <a href="error.html">
+                    <i class="fa-regular fa-bell"></i>
+                    </a>
+                    <span></span>
+                </button>
+
+                <div class="stackly-project-header-profile">
+
+                    <div class="stackly-project-profile-icon">
+                        <a href="error.html">
+                        <i class="fa-solid fa-user-shield"></i>
+                        </a>
+                    </div>
+
+                    <div class="stackly-project-profile-text">
+
+                        <strong id="headerAdminName">
+                            Admin
+                        </strong>
+
+                        <span id="headerAdminRole">
+                            Administrator
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="stackly-project-content">
+
+            <div class="stackly-project-intro">
+
+                <div class="stackly-project-intro-copy">
+
+                    <span class="stackly-project-kicker">
+                        WORKSPACE
+                    </span>
+
+                    <h2>
+                        Projects That Move.
+                    </h2>
+
+                    <p>
+                        Track active work, monitor progress and
+                        keep every project moving toward launch.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="stackly-new-project-button"
+                    id="newProjectButton"
+                >
+                    <i class="fa-solid fa-folder-plus"></i>
+
+                    <span>
+                        New Project
+                    </span>
+                </button>
+
+            </div>
+
+            <div class="stackly-project-summary">
+
+                <div class="stackly-summary-card">
+
+                    <div class="stackly-summary-icon lime">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+
+                    <div>
+                        <span>
+                            TOTAL PROJECTS
+                        </span>
+
+                        <strong>
+                            24
+                        </strong>
+                    </div>
+
+                </div>
+
+                <div class="stackly-summary-card">
+
+                    <div class="stackly-summary-icon dark">
+                        <i class="fa-solid fa-spinner"></i>
+                    </div>
+
+                    <div>
+                        <span>
+                            IN PROGRESS
+                        </span>
+
+                        <strong>
+                            12
+                        </strong>
+                    </div>
+
+                </div>
+
+                <div class="stackly-summary-card">
+
+                    <div class="stackly-summary-icon beige">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div>
+                        <span>
+                            COMPLETED
+                        </span>
+
+                        <strong>
+                            9
+                        </strong>
+                    </div>
+
+                </div>
+
+                <div class="stackly-summary-card">
+
+                    <div class="stackly-summary-icon outline">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <span>
+                            NEEDS ATTENTION
+                        </span>
+
+                        <strong>
+                            3
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="stackly-project-toolbar">
+
+                <div class="stackly-project-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="projectSearch"
+                        placeholder="Search projects..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+                <div class="stackly-project-filters">
+
+                    <button
+                        type="button"
+                        class="stackly-filter-button active"
+                        data-filter="all"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stackly-filter-button"
+                        data-filter="progress"
+                    >
+                        In Progress
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stackly-filter-button"
+                        data-filter="review"
+                    >
+                        Review
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stackly-filter-button"
+                        data-filter="completed"
+                    >
+                        Completed
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div
+                class="stackly-project-grid"
+                id="projectGrid"
+            >
+
+                <article
+                    class="stackly-project-card"
+                    data-status="progress"
+                    data-search="Nova Brand System Nova Labs Branding"
+                >
+
+                    <div class="stackly-project-card-top">
+
+                        <div class="stackly-project-mark lime">
+                            N
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-card-menu"
+                            aria-label="Project options"
+                        >
+                            <a href="error.html">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </button>
+
+                    </div>
+
+                    <div class="stackly-project-category">
+                        BRAND STRATEGY
+                    </div>
+
+                    <h3>
+                        Nova Brand System
+                    </h3>
+
+                    <p>
+                        Complete identity system, visual language
+                        and digital brand direction.
+                    </p>
+
+                    <div class="stackly-project-client">
+
+                        <span>
+                            CLIENT
+                        </span>
+
+                        <strong>
+                            Nova Labs
+                        </strong>
+
+                    </div>
+
+                    <div class="stackly-project-progress">
+
+                        <div>
+
+                            <span>
+                                PROJECT PROGRESS
+                            </span>
+
+                            <strong>
+                                92%
+                            </strong>
+
+                        </div>
+
+                        <div class="stackly-progress-track">
+                            <span style="width:92%"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-project-card-footer">
+
+                        <div class="stackly-project-deadline">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <span>
+                                Sep 14, 2026
+                            </span>
+
+                        </div>
+
+                        <span class="stackly-project-status on-track">
+                            On Track
+                        </span>
+
+                    </div>
+
+                </article>
+
+                <article
+                    class="stackly-project-card"
+                    data-status="progress"
+                    data-search="Aether Digital Aether Digital Experience Website"
+                >
+
+                    <div class="stackly-project-card-top">
+
+                        <div class="stackly-project-mark dark">
+                            A
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-card-menu"
+                            aria-label="Project options"
+                        >
+                             <a href="error.html">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </button>
+
+                    </div>
+
+                    <div class="stackly-project-category">
+                        DIGITAL EXPERIENCE
+                    </div>
+
+                    <h3>
+                        Aether Digital
+                    </h3>
+
+                    <p>
+                        Strategy, UX design and development for a
+                        next-generation digital platform.
+                    </p>
+
+                    <div class="stackly-project-client">
+
+                        <span>
+                            CLIENT
+                        </span>
+
+                        <strong>
+                            Aether
+                        </strong>
+
+                    </div>
+
+                    <div class="stackly-project-progress">
+
+                        <div>
+
+                            <span>
+                                PROJECT PROGRESS
+                            </span>
+
+                            <strong>
+                                68%
+                            </strong>
+
+                        </div>
+
+                        <div class="stackly-progress-track">
+                            <span style="width:68%"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-project-card-footer">
+
+                        <div class="stackly-project-deadline">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <span>
+                                Sep 21, 2026
+                            </span>
+
+                        </div>
+
+                        <span class="stackly-project-status review">
+                            Review
+                        </span>
+
+                    </div>
+
+                </article>
+
+                <article
+                    class="stackly-project-card"
+                    data-status="review"
+                    data-search="Monoform Monoform Product Design"
+                >
+
+                    <div class="stackly-project-card-top">
+
+                        <div class="stackly-project-mark beige">
+                            M
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-card-menu"
+                            aria-label="Project options"
+                        >
+                           <a href="error.html">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </button>
+
+                    </div>
+
+                    <div class="stackly-project-category">
+                        PRODUCT DESIGN
+                    </div>
+
+                    <h3>
+                        Monoform
+                    </h3>
+
+                    <p>
+                        Product architecture and interface system
+                        for a new creative technology platform.
+                    </p>
+
+                    <div class="stackly-project-client">
+
+                        <span>
+                            CLIENT
+                        </span>
+
+                        <strong>
+                            Monoform
+                        </strong>
+
+                    </div>
+
+                    <div class="stackly-project-progress">
+
+                        <div>
+
+                            <span>
+                                PROJECT PROGRESS
+                            </span>
+
+                            <strong>
+                                45%
+                            </strong>
+
+                        </div>
+
+                        <div class="stackly-progress-track">
+                            <span style="width:45%"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-project-card-footer">
+
+                        <div class="stackly-project-deadline">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <span>
+                                Sep 28, 2026
+                            </span>
+
+                        </div>
+
+                        <span class="stackly-project-status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+                </article>
+
+                <article
+                    class="stackly-project-card"
+                    data-status="completed"
+                    data-search="Orbit Commerce Orbit E-commerce"
+                >
+
+                    <div class="stackly-project-card-top">
+
+                        <div class="stackly-project-mark outline">
+                            O
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-card-menu"
+                            aria-label="Project options"
+                        >
+                           <a href="error.html">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </button>
+
+                    </div>
+
+                    <div class="stackly-project-category">
+                        E-COMMERCE
+                    </div>
+
+                    <h3>
+                        Orbit Commerce
+                    </h3>
+
+                    <p>
+                        Conversion-focused commerce experience
+                        built around a flexible product system.
+                    </p>
+
+                    <div class="stackly-project-client">
+
+                        <span>
+                            CLIENT
+                        </span>
+
+                        <strong>
+                            Orbit
+                        </strong>
+
+                    </div>
+
+                    <div class="stackly-project-progress">
+
+                        <div>
+
+                            <span>
+                                PROJECT PROGRESS
+                            </span>
+
+                            <strong>
+                                100%
+                            </strong>
+
+                        </div>
+
+                        <div class="stackly-progress-track">
+                            <span style="width:100%"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-project-card-footer">
+
+                        <div class="stackly-project-deadline">
+
+                            <i class="fa-regular fa-calendar-check"></i>
+
+                            <span>
+                                Completed
+                            </span>
+
+                        </div>
+
+                        <span class="stackly-project-status completed">
+                            Completed
+                        </span>
+
+                    </div>
+
+                </article>
+
+                <article
+                    class="stackly-project-card"
+                    data-status="progress"
+                    data-search="Vertex AI Vertex Artificial Intelligence"
+                >
+
+                    <div class="stackly-project-card-top">
+
+                        <div class="stackly-project-mark lime">
+                            V
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-card-menu"
+                            aria-label="Project options"
+                        >
+                        <a href="error.html">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </button>
+
+                    </div>
+
+                    <div class="stackly-project-category">
+                        TECHNOLOGY
+                    </div>
+
+                    <h3>
+                        Vertex AI
+                    </h3>
+
+                    <p>
+                        Brand and product experience for an
+                        emerging artificial intelligence platform.
+                    </p>
+
+                    <div class="stackly-project-client">
+
+                        <span>
+                            CLIENT
+                        </span>
+
+                        <strong>
+                            Vertex
+                        </strong>
+
+                    </div>
+
+                    <div class="stackly-project-progress">
+
+                        <div>
+
+                            <span>
+                                PROJECT PROGRESS
+                            </span>
+
+                            <strong>
+                                76%
+                            </strong>
+
+                        </div>
+
+                        <div class="stackly-progress-track">
+                            <span style="width:76%"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-project-card-footer">
+
+                        <div class="stackly-project-deadline">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <span>
+                                Oct 04, 2026
+                            </span>
+
+                        </div>
+
+                        <span class="stackly-project-status on-track">
+                            On Track
+                        </span>
+
+                    </div>
+
+                </article>
+
+                <article
+                    class="stackly-project-card"
+                    data-status="review"
+                    data-search="North Studio North Creative Studio"
+                >
+
+                    <div class="stackly-project-card-top">
+
+                        <div class="stackly-project-mark dark">
+                            N
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-card-menu"
+                            aria-label="Project options"
+                        >
+                           <a href="error.html">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </button>
+
+                    </div>
+
+                    <div class="stackly-project-category">
+                        CREATIVE DIRECTION
+                    </div>
+
+                    <h3>
+                        North Studio
+                    </h3>
+
+                    <p>
+                        New visual identity and launch campaign
+                        for an independent creative studio.
+                    </p>
+
+                    <div class="stackly-project-client">
+
+                        <span>
+                            CLIENT
+                        </span>
+
+                        <strong>
+                            North
+                        </strong>
+
+                    </div>
+
+                    <div class="stackly-project-progress">
+
+                        <div>
+
+                            <span>
+                                PROJECT PROGRESS
+                            </span>
+
+                            <strong>
+                                84%
+                            </strong>
+
+                        </div>
+
+                        <div class="stackly-progress-track">
+                            <span style="width:84%"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-project-card-footer">
+
+                        <div class="stackly-project-deadline">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <span>
+                                Oct 09, 2026
+                            </span>
+
+                        </div>
+
+                        <span class="stackly-project-status review">
+                            Review
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+            <br>
+
+            <div class="stackly-project-pagination">
+
+                <button
+                    type="button"
+                    class="stackly-pagination-button disabled"
+                    aria-label="Previous page"
+                >
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <button
+                    type="button"
+                    class="stackly-pagination-button active"
+                >
+                <a href="error.html">
+                    1
+                    </a>
+                </button>
+
+                <button
+                    type="button"
+                    class="stackly-pagination-button"
+                >
+                     <a href="error.html">
+                    2
+                    </a>
+                </button>
+
+                <button
+                    type="button"
+                    class="stackly-pagination-button"
+                >
+                     <a href="error.html">
+                    3
+                    </a>
+                </button>
+
+                <button
+                    type="button"
+                    class="stackly-pagination-button"
+                    aria-label="Next page"
+                >
+                <a href="error.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="projects.js"></script>
+
+</body>
+</html>

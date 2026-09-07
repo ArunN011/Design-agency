@@ -1,0 +1,919 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    background: #090909;
+    color: #f2f0e9;
+    overflow-x: hidden;
+}
+
+:root {
+    --stackly-black: #090909;
+    --stackly-dark: #111111;
+    --stackly-card: #141414;
+    --stackly-card-light: #1b1b1b;
+    --stackly-lime: #c8ff3d;
+    --stackly-cream: #f2f0e9;
+    --stackly-muted: #878787;
+    --stackly-border: rgba(242, 240, 233, .14);
+    --stackly-red: #ff4d4d;
+}
+
+.stackly-login-page {
+    position: relative;
+    min-height: 100vh;
+    padding: 70px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 18% 20%,
+            rgba(200, 255, 61, .08),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(200, 255, 61, .05),
+            transparent 28%
+        ),
+        #090909;
+}
+
+.stackly-login-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(
+            rgba(242, 240, 233, .035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(242, 240, 233, .035) 1px,
+            transparent 1px
+        );
+    background-size: 72px 72px;
+    pointer-events: none;
+}
+
+.stackly-login-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+}
+
+.stackly-login-glow-one {
+    width: 350px;
+    height: 350px;
+    top: -120px;
+    right: -80px;
+    background: rgba(200, 255, 61, .08);
+}
+
+.stackly-login-glow-two {
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+    left: -90px;
+    background: rgba(242, 240, 233, .04);
+}
+
+.stackly-login-outline {
+    position: absolute;
+    top: 7%;
+    left: -20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(150px, 25vw, 420px);
+    line-height: .8;
+    font-weight: 700;
+    letter-spacing: -.1em;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(242, 240, 233, .045);
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.stackly-login-back {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--stackly-cream);
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    z-index: 10;
+    transition: .35s ease;
+}
+
+.stackly-login-back i {
+    color: var(--stackly-lime);
+    transition: transform .35s ease;
+}
+
+.stackly-login-back:hover {
+    color: var(--stackly-lime);
+}
+
+.stackly-login-back:hover i {
+    transform: translateX(-5px);
+}
+
+.stackly-login-decoration {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--stackly-lime);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.decoration-one {
+    top: 16%;
+    left: 8%;
+    font-size: 22px;
+}
+
+.decoration-two {
+    right: 8%;
+    top: 24%;
+    font-size: 18px;
+}
+
+.decoration-three {
+    left: 11%;
+    bottom: 17%;
+    font-size: 16px;
+}
+
+.stackly-login-card {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 520px;
+    padding: 43px;
+    background: rgba(17, 17, 17, .96);
+    border: 1px solid var(--stackly-border);
+    box-shadow:
+        0 40px 100px rgba(0, 0, 0, .45),
+        inset 0 1px 0 rgba(255, 255, 255, .035);
+}
+
+.stackly-login-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid transparent;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(200, 255, 61, .45),
+            transparent 25%,
+            transparent 72%,
+            rgba(200, 255, 61, .2)
+        ) border-box;
+    -webkit-mask:
+        linear-gradient(#000 0 0) padding-box,
+        linear-gradient(#000 0 0);
+    mask:
+        linear-gradient(#000 0 0) padding-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: .55;
+}
+
+.stackly-login-card-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 3px;
+    background: var(--stackly-lime);
+}
+
+ .stackly-login-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.stackly-login-brand a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stackly-login-logo-image {
+    width: 150px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.stackly-login-header {
+    margin-bottom: 30px;
+}
+
+.stackly-login-kicker {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 20px;
+    color: var(--stackly-muted);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .11em;
+}
+
+.stackly-login-kicker span {
+    width: 30px;
+    height: 1px;
+    background: var(--stackly-lime);
+}
+
+.stackly-login-header h1 {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 55px;
+    line-height: .88;
+    font-weight: 700;
+    letter-spacing: -.065em;
+    text-transform: uppercase;
+}
+
+.stackly-login-header h1 span {
+    display: block;
+    color: var(--stackly-lime);
+}
+
+.stackly-login-header p {
+    max-width: 430px;
+    margin-top: 24px;
+    color: var(--stackly-muted);
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.stackly-login-role {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.stackly-role-btn {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid var(--stackly-border);
+    background: var(--stackly-card-light);
+    color: #9b9b9b;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+.stackly-role-btn i {
+    font-size: 15px;
+}
+
+.stackly-role-btn:hover {
+    transform: translateY(-2px);
+    border-color: rgba(200, 255, 61, .35);
+}
+
+.stackly-role-btn.active {
+    background: var(--stackly-lime);
+    color: var(--stackly-black);
+    border-color: var(--stackly-lime);
+    box-shadow: 0 12px 30px rgba(200, 255, 61, .12);
+}
+
+.stackly-login-form {
+    width: 100%;
+}
+
+.stackly-form-group {
+    margin-bottom: 23px;
+}
+
+.stackly-form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(242, 240, 233, .68);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .09em;
+}
+
+.stackly-input-wrap {
+    position: relative;
+}
+
+.stackly-input-wrap > i {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 16px;
+    pointer-events: none;
+    z-index: 2;
+    transition: color .3s ease;
+}
+
+.stackly-input-wrap input {
+    width: 100%;
+    height: 58px;
+    padding: 0 48px;
+    border: 1px solid var(--stackly-border);
+    border-radius: 0;
+    outline: none;
+    background: #171717;
+    color: var(--stackly-cream);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    transition:
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+.stackly-input-wrap input::placeholder {
+    color: #626262;
+}
+
+.stackly-input-wrap input:focus {
+    border-color: var(--stackly-lime);
+    background: #151515;
+    box-shadow: 0 0 0 3px rgba(200, 255, 61, .06);
+}
+
+.stackly-input-wrap:focus-within > i {
+    color: var(--stackly-lime);
+}
+
+.stackly-password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    border: none;
+    background: transparent;
+    color: #777;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.stackly-password-toggle:hover {
+    color: var(--stackly-lime);
+}
+
+.stackly-field-error {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    color: var(--stackly-red);
+    font-size: 13px;
+    line-height: 1.4;
+    transition:
+        opacity .25s ease,
+        height .25s ease,
+        margin .25s ease;
+}
+
+.stackly-form-group.has-error .stackly-field-error {
+    height: 20px;
+    opacity: 1;
+    margin-top: 8px;
+}
+
+.stackly-form-group.has-error .stackly-input-wrap input {
+    border-color: var(--stackly-red);
+    box-shadow: 0 0 0 3px rgba(255, 77, 77, .07);
+}
+
+.stackly-form-group.has-success .stackly-input-wrap input {
+    border-color: rgba(200, 255, 61, .6);
+}
+
+.stackly-login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 5px 0 25px;
+}
+
+.stackly-remember {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #8a8a8a;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.stackly-remember input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.stackly-custom-checkbox {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #555;
+    background: #171717;
+    transition: .25s ease;
+}
+
+.stackly-remember input:checked + .stackly-custom-checkbox {
+    background: var(--stackly-lime);
+    border-color: var(--stackly-lime);
+}
+
+.stackly-remember input:checked + .stackly-custom-checkbox::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 9px;
+    border: solid #090909;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.stackly-forgot {
+    color: var(--stackly-lime);
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.stackly-forgot:hover {
+    color: var(--stackly-cream);
+}
+
+.stackly-login-submit {
+    position: relative;
+    width: 100%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 17px;
+    border: 1px solid var(--stackly-lime);
+    background: var(--stackly-lime);
+    color: var(--stackly-black);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .35s ease;
+}
+
+.stackly-login-submit::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 0;
+    background: var(--stackly-black);
+    transition: width .4s cubic-bezier(.2, .8, .2, 1);
+}
+
+.stackly-login-submit:hover::before {
+    width: 100%;
+}
+
+.stackly-login-submit:hover {
+    color: var(--stackly-lime);
+}
+
+.stackly-submit-text,
+.stackly-submit-icon,
+.stackly-submit-loader {
+    position: relative;
+    z-index: 2;
+}
+
+.stackly-submit-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+}
+
+.stackly-submit-icon i {
+    transition: transform .3s ease;
+}
+
+.stackly-login-submit:hover .stackly-submit-icon i {
+    transform: translateX(4px);
+}
+
+.stackly-submit-loader {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stackly-submit-loader i {
+    animation: stacklySpin .8s linear infinite;
+}
+
+.stackly-login-submit.loading {
+    pointer-events: none;
+}
+
+.stackly-login-submit.loading .stackly-submit-text,
+.stackly-login-submit.loading .stackly-submit-icon {
+    visibility: hidden;
+}
+
+.stackly-login-submit.loading .stackly-submit-loader {
+    display: block;
+}
+
+.stackly-login-message {
+    min-height: 22px;
+    margin-top: 13px;
+    text-align: center;
+    color: var(--stackly-red);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.stackly-login-message.success {
+    color: var(--stackly-lime);
+}
+
+.stackly-register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 30px;
+    color: #777;
+    font-size: 14px;
+    text-align: center;
+}
+
+.stackly-register a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--stackly-lime);
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.stackly-register a i {
+    font-size: 12px;
+}
+
+.stackly-register a:hover {
+    color: var(--stackly-cream);
+}
+
+.stackly-security {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(242, 240, 233, .1);
+    color: #626262;
+    font-size: 16px;
+    text-align: center;
+}
+
+.stackly-security i {
+    color: var(--stackly-lime);
+    font-size: 15px;
+}
+
+.stackly-login-footer {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+    padding-top: 17px;
+    border-top: 1px solid rgba(242, 240, 233, .1);
+    color: #4f4f4f;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .09em;
+}
+
+.stackly-login-footer > div {
+    height: 1px;
+    background: rgba(242, 240, 233, .1);
+}
+
+.stackly-login-footer span:last-child {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stackly-login-footer i {
+    color: var(--stackly-lime);
+    font-size: 10px;
+}
+
+.stackly-input-error-shake {
+    animation: stacklyInputShake .45s ease;
+}
+
+.stackly-login-error-shake {
+    animation: stacklyCardShake .45s ease;
+}
+
+@keyframes stacklyInputShake {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-7px);
+    }
+
+    40% {
+        transform: translateX(7px);
+    }
+
+    60% {
+        transform: translateX(-5px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes stacklyCardShake {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-5px);
+    }
+
+    40% {
+        transform: translateX(5px);
+    }
+
+    60% {
+        transform: translateX(-4px);
+    }
+
+    80% {
+        transform: translateX(4px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes stacklySpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 767px) {
+
+    .stackly-login-page {
+        align-items: flex-start;
+        padding: 85px 17px 35px;
+    }
+
+    .stackly-login-back {
+        top: 25px;
+        left: 20px;
+        font-size: 13px;
+    }
+
+    .stackly-login-card {
+        max-width: 560px;
+        padding: 34px 26px;
+    }
+
+    .stackly-login-brand {
+        margin-bottom: 32px;
+    }
+
+    .stackly-login-header h1 {
+        font-size: 48px;
+    }
+
+    .stackly-login-header p {
+        font-size: 15px;
+    }
+
+    .stackly-login-role {
+        margin-bottom: 25px;
+    }
+
+    .stackly-role-btn {
+        height: 55px;
+        font-size: 14px;
+    }
+
+    .stackly-input-wrap input {
+        height: 56px;
+    }
+
+    .decoration-one {
+        left: 3%;
+    }
+
+    .decoration-two {
+        right: 3%;
+    }
+
+    .decoration-three {
+        left: 4%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .stackly-login-page {
+        padding: 78px 12px 25px;
+    }
+
+    .stackly-login-back {
+        top: 21px;
+        left: 17px;
+    }
+
+    .stackly-login-card {
+        padding: 30px 18px;
+    }
+
+    .stackly-login-brand {
+        margin-bottom: 28px;
+    }
+
+    .stackly-login-logo {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+
+    .stackly-login-brand-name strong {
+        font-size: 17px;
+    }
+
+    .stackly-login-brand-name span {
+        font-size: 9px;
+    }
+
+    .stackly-login-kicker {
+        font-size: 11px;
+    }
+
+    .stackly-login-header h1 {
+        font-size: 39px;
+    }
+
+    .stackly-login-header p {
+        font-size: 14px;
+    }
+
+    .stackly-login-role {
+        gap: 8px;
+    }
+
+    .stackly-role-btn {
+        height: 53px;
+        font-size: 13px;
+    }
+
+    .stackly-form-group label {
+        font-size: 12px;
+    }
+
+    .stackly-input-wrap input {
+        height: 54px;
+        padding-left: 45px;
+        font-size: 14px;
+    }
+
+    .stackly-login-options {
+        gap: 8px;
+    }
+
+    .stackly-remember {
+        font-size: 12px;
+    }
+
+    .stackly-forgot {
+        font-size: 12px;
+    }
+
+    .stackly-login-submit {
+        height: 56px;
+        font-size: 14px;
+    }
+
+    .stackly-register {
+        font-size: 12px;
+    }
+
+    .stackly-security {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .stackly-login-footer {
+        font-size: 8px;
+    }
+
+    .stackly-login-outline {
+        top: 17%;
+        font-size: 34vw;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .stackly-login-card {
+        padding: 26px 14px;
+    }
+
+    .stackly-login-header h1 {
+        font-size: 34px;
+    }
+
+    .stackly-role-btn {
+        font-size: 12px;
+    }
+
+    .stackly-login-options {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .stackly-forgot {
+        margin-left: 26px;
+    }
+}

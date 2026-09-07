@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Messages | Stackly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="message.css">
+</head>
+
+<body>
+
+    <aside
+        class="stackly-dashboard-sidebar"
+        id="dashboardSidebar"
+    >
+
+        <div class="stackly-sidebar-brand">
+            <a href="user-dashboard.html">
+                <img
+                    src="Assest/whitelogo.webp"
+                    alt="Stackly Design Agency"
+                    class="stackly-sidebar-logo-image"
+                >
+            </a>
+        </div>
+
+        <div class="stackly-sidebar-user">
+
+            <div class="stackly-sidebar-user-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="stackly-sidebar-user-info">
+                <strong id="sidebarUserEmail">
+                    user@example.com
+                </strong>
+
+                <span id="sidebarUserRole">
+                    User
+                </span>
+            </div>
+
+        </div>
+
+        <nav class="stackly-sidebar-nav">
+
+            <div class="stackly-sidebar-group">
+
+                <span class="stackly-sidebar-label">
+                    WORKSPACE
+                </span>
+
+                <a
+                    href="user-dashboard.html"
+                    class="stackly-sidebar-link"
+                >
+                    <i class="fa-solid fa-table-cells-large"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="stackly-sidebar-group">
+
+                <span class="stackly-sidebar-label">
+                    CREATIVE
+                </span>
+
+                <a
+                    href="message.html"
+                    class="stackly-sidebar-link active"
+                >
+                    <i class="fa-solid fa-comments"></i>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <strong class="stackly-message-count">
+                        3
+                    </strong>
+                </a>
+
+            </div>
+
+            <div class="stackly-sidebar-group">
+
+                <span class="stackly-sidebar-label">
+                    ACCOUNT
+                </span>
+
+                <a
+                    href="myprofile.html"
+                    class="stackly-sidebar-link"
+                >
+                    <i class="fa-solid fa-user-gear"></i>
+
+                    <span>
+                        My Profile
+                    </span>
+                </a>
+
+            </div>
+
+        </nav>
+
+        <div class="stackly-sidebar-bottom">
+
+            <a
+                href="login.html"
+                class="stackly-sidebar-link"
+                id="logoutLink"
+            >
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+            </a>
+
+        </div>
+
+    </aside>
+
+    <div
+        class="stackly-sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+    <main class="stackly-dashboard-main">
+
+        <header class="stackly-dashboard-header">
+
+            <div class="stackly-header-left">
+
+                <button
+                    type="button"
+                    class="stackly-mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="stackly-header-title">
+
+                    <span>
+                        CREATIVE
+                    </span>
+
+                    <h1>
+                        Messages
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <a
+                href="user-dashboard.html"
+                class="stackly-mobile-brand"
+            >
+                <img
+                    src="Assest/whitelogo.webp"
+                    alt="Stackly Design Agency"
+                    class="stackly-mobile-logo-image"
+                >
+            </a>
+
+            <div class="stackly-header-actions">
+
+                <button
+                    type="button"
+                    class="stackly-header-action"
+                    aria-label="Search"
+                >
+                <a href="error.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </button>
+
+                <button
+                    type="button"
+                    class="stackly-header-action"
+                    aria-label="Notifications"
+                >
+                <a href="error.html">
+                    <i class="fa-regular fa-bell"></i>
+                    </a>
+
+                    <span class="stackly-notification-dot"></span>
+                </button>
+
+                <div class="stackly-header-profile">
+
+                    <div class="stackly-header-profile-icon">
+                        <a href="error.html">
+                        <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+
+                    <div class="stackly-header-profile-text">
+
+                        <strong id="headerUserName">
+                            User
+                        </strong>
+
+                        <span id="headerUserRole">
+                            User
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="stackly-message-page">
+
+            <div class="stackly-message-intro">
+
+                <div class="stackly-message-intro-text">
+
+                    <span class="stackly-kicker">
+                        INBOX
+                    </span>
+
+                    <h2>
+                        Stay Connected.
+                    </h2>
+
+                    <p>
+                        Manage conversations, project updates,
+                        feedback and important creative discussions
+                        from one place.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="stackly-new-message-button"
+                    id="newMessageButton"
+                >
+                    <i class="fa-solid fa-pen"></i>
+
+                    <span>
+                        New Message
+                    </span>
+                </button>
+
+            </div>
+
+            <div class="stackly-message-workspace">
+
+                <section class="stackly-inbox-panel">
+
+                    <div class="stackly-panel-heading">
+
+                        <div>
+
+                            <span>
+                                MESSAGES
+                            </span>
+
+                            <h3>
+                                Conversations
+                            </h3>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-panel-icon-button"
+                            aria-label="Message filters"
+                        >
+                        <a href="error.html">
+                            <i class="fa-solid fa-sliders"></i>
+                            </a>
+                        </button>
+
+                    </div>
+
+                    <div class="stackly-search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="messageSearch"
+                            placeholder="Search conversations"
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                    <div
+                        class="stackly-conversation-list"
+                        id="conversationList"
+                    >
+
+                        <button
+                            type="button"
+                            class="stackly-conversation active"
+                            data-name="Creative Team"
+                            data-subject="Nova Brand System"
+                            data-time="09:42 AM"
+                            data-message="Perfect. The next milestone will focus on the final identity system."
+                        >
+
+                            <div class="stackly-conversation-avatar lime">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <div class="stackly-conversation-info">
+
+                                <div class="stackly-conversation-topline">
+
+                                    <strong>
+                                        Creative Team
+                                    </strong>
+
+                                    <span>
+                                        09:42 AM
+                                    </span>
+
+                                </div>
+
+                                <strong class="stackly-conversation-subject">
+                                    Nova Brand System
+                                </strong>
+
+                                <p>
+                                    Perfect. The next milestone will focus...
+                                </p>
+
+                            </div>
+
+                            <span class="stackly-unread">
+                                2
+                            </span>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="stackly-conversation"
+                            data-name="Aether Digital"
+                            data-subject="Homepage Revision"
+                            data-time="Yesterday"
+                            data-message="The homepage revision is ready for your review."
+                        >
+
+                            <div class="stackly-conversation-avatar dark">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+
+                            <div class="stackly-conversation-info">
+
+                                <div class="stackly-conversation-topline">
+
+                                    <strong>
+                                        Aether Digital
+                                    </strong>
+
+                                    <span>
+                                        Yesterday
+                                    </span>
+
+                                </div>
+
+                                <strong class="stackly-conversation-subject">
+                                    Homepage Revision
+                                </strong>
+
+                                <p>
+                                    The homepage revision is ready for review...
+                                </p>
+
+                            </div>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="stackly-conversation"
+                            data-name="Project Manager"
+                            data-subject="Project Timeline"
+                            data-time="Mon"
+                            data-message="Your next milestone is scheduled for this Friday."
+                        >
+
+                            <div class="stackly-conversation-avatar beige">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+
+                            <div class="stackly-conversation-info">
+
+                                <div class="stackly-conversation-topline">
+
+                                    <strong>
+                                        Project Manager
+                                    </strong>
+
+                                    <span>
+                                        Mon
+                                    </span>
+
+                                </div>
+
+                                <strong class="stackly-conversation-subject">
+                                    Project Timeline
+                                </strong>
+
+                                <p>
+                                    Your next milestone is scheduled...
+                                </p>
+
+                            </div>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="stackly-conversation"
+                            data-name="Stackly Support"
+                            data-subject="Welcome to Stackly"
+                            data-time="Sun"
+                            data-message="Welcome to your Stackly workspace."
+                        >
+
+                            <div class="stackly-conversation-avatar outline">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+
+                            <div class="stackly-conversation-info">
+
+                                <div class="stackly-conversation-topline">
+
+                                    <strong>
+                                        Stackly Support
+                                    </strong>
+
+                                    <span>
+                                        Sun
+                                    </span>
+
+                                </div>
+
+                                <strong class="stackly-conversation-subject">
+                                    Welcome to Stackly
+                                </strong>
+
+                                <p>
+                                    Welcome to your Stackly workspace...
+                                </p>
+
+                            </div>
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+                <section class="stackly-chat-panel">
+
+                    <div class="stackly-chat-header">
+
+                        <div class="stackly-chat-person">
+
+                            <div
+                                class="stackly-chat-avatar"
+                                id="chatAvatar"
+                            >
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <div class="stackly-chat-person-info">
+
+                                <span>
+                                    ACTIVE CONVERSATION
+                                </span>
+
+                                <h3 id="chatName">
+                                    Creative Team
+                                </h3>
+
+                                <p id="chatSubject">
+                                    Nova Brand System
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-chat-options"
+                            aria-label="Conversation options"
+                        >
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+                    <div
+                        class="stackly-chat-body"
+                        id="chatBody"
+                    >
+
+                        <div class="stackly-date-divider">
+                            <span>
+                                Today
+                            </span>
+                        </div>
+
+                        <div class="stackly-chat-row incoming">
+
+                            <div class="stackly-chat-mini-avatar">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <div class="stackly-message-group">
+
+                                <span class="stackly-message-author">
+                                    Creative Team
+                                </span>
+
+                                <div class="stackly-chat-bubble">
+                                    Hi! The latest brand direction is now
+                                    available in the workspace.
+                                </div>
+
+                                <span class="stackly-message-time">
+                                    09:36 AM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stackly-chat-row incoming">
+
+                            <div class="stackly-chat-mini-avatar">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <div class="stackly-message-group">
+
+                                <span class="stackly-message-author">
+                                    Creative Team
+                                </span>
+
+                                <div class="stackly-chat-bubble">
+                                    We have refined the typography,
+                                    spacing and visual hierarchy.
+                                </div>
+
+                                <span class="stackly-message-time">
+                                    09:39 AM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stackly-chat-row outgoing">
+
+                            <div class="stackly-message-group">
+
+                                <div class="stackly-chat-bubble">
+                                    Great. I will review the new direction
+                                    and share feedback shortly.
+                                </div>
+
+                                <span class="stackly-message-time">
+                                    09:41 AM
+                                </span>
+
+                            </div>
+
+                            <div class="stackly-chat-mini-avatar user">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="stackly-chat-row incoming">
+
+                            <div class="stackly-chat-mini-avatar">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <div class="stackly-message-group">
+
+                                <span class="stackly-message-author">
+                                    Creative Team
+                                </span>
+
+                                <div class="stackly-chat-bubble">
+                                    Perfect. The next milestone will focus
+                                    on the final identity system.
+                                </div>
+
+                                <span class="stackly-message-time">
+                                    09:42 AM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <form
+                        class="stackly-chat-compose"
+                        id="messageForm"
+                    >
+
+                        <button
+                            type="button"
+                            class="stackly-attach-button"
+                            aria-label="Attach file"
+                        >
+                        <a href="error.html">
+                            <i class="fa-solid fa-paperclip"></i>
+                            </a>
+                        </button>
+
+                        <input
+                            type="text"
+                            id="messageInput"
+                            placeholder="Write a message..."
+                            autocomplete="off"
+                        >
+
+                        <button
+                            type="submit"
+                            class="stackly-send-button"
+                            aria-label="Send message"
+                        >
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="message.js"></script>
+
+</body>
+</html>

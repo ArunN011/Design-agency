@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Profile | Stackly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="myprofile.css">
+</head>
+
+<body>
+
+    <aside
+        class="stackly-dashboard-sidebar"
+        id="dashboardSidebar"
+    >
+
+        <div class="stackly-sidebar-brand">
+            <a href="user-dashboard.html">
+                <img
+                    src="Assest/whitelogo.webp"
+                    alt="Stackly Design Agency"
+                    class="stackly-sidebar-logo-image"
+                >
+            </a>
+        </div>
+
+        <div class="stackly-sidebar-user">
+
+            <div class="stackly-sidebar-user-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="stackly-sidebar-user-info">
+
+                <strong id="sidebarUserEmail">
+                    user@example.com
+                </strong>
+
+                <span id="sidebarUserRole">
+                    User
+                </span>
+
+            </div>
+
+        </div>
+
+        <nav class="stackly-sidebar-nav">
+
+            <div class="stackly-sidebar-group">
+
+                <span class="stackly-sidebar-label">
+                    WORKSPACE
+                </span>
+
+                <a
+                    href="user-dashboard.html"
+                    class="stackly-sidebar-link"
+                >
+                    <i class="fa-solid fa-table-cells-large"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="stackly-sidebar-group">
+
+                <span class="stackly-sidebar-label">
+                    CREATIVE
+                </span>
+
+                <a
+                    href="message.html"
+                    class="stackly-sidebar-link"
+                >
+                    <i class="fa-solid fa-comments"></i>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <strong class="stackly-message-count">
+                        3
+                    </strong>
+                </a>
+
+            </div>
+
+            <div class="stackly-sidebar-group">
+
+                <span class="stackly-sidebar-label">
+                    ACCOUNT
+                </span>
+
+                <a
+                    href="myprofile.html"
+                    class="stackly-sidebar-link active"
+                >
+                    <i class="fa-solid fa-user-gear"></i>
+
+                    <span>
+                        My Profile
+                    </span>
+                </a>
+
+            </div>
+
+        </nav>
+
+        <div class="stackly-sidebar-bottom">
+
+            <a
+                href="login.html"
+                class="stackly-sidebar-link"
+                id="logoutLink"
+            >
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+            </a>
+
+        </div>
+
+    </aside>
+
+    <div
+        class="stackly-sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+    <main class="stackly-dashboard-main">
+
+        <header class="stackly-dashboard-header">
+
+            <div class="stackly-header-left">
+
+                <button
+                    type="button"
+                    class="stackly-mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="stackly-header-title">
+
+                    <span>
+                        ACCOUNT
+                    </span>
+
+                    <h1>
+                        My Profile
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <a
+                href="user-dashboard.html"
+                class="stackly-mobile-brand"
+            >
+                <img
+                    src="Assest/whitelogo.webp"
+                    alt="Stackly Design Agency"
+                    class="stackly-mobile-logo-image"
+                >
+            </a>
+
+            <div class="stackly-header-actions">
+
+                <button
+                    type="button"
+                    class="stackly-header-action"
+                    aria-label="Search"
+                >
+                <a href="error.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </button>
+
+                <button
+                    type="button"
+                    class="stackly-header-action"
+                    aria-label="Notifications"
+                >
+                <a href="error.html">
+                    <i class="fa-regular fa-bell"></i>
+                    </a>
+
+                    <span class="stackly-notification-dot"></span>
+                </button>
+
+                <div class="stackly-header-profile">
+
+                    <div class="stackly-header-profile-icon">
+                        <a href="error.html">
+                        <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+
+                    <div class="stackly-header-profile-text">
+
+                        <strong id="headerUserName">
+                            User
+                        </strong>
+
+                        <span id="headerUserRole">
+                            User
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="stackly-profile-page">
+
+            <div class="stackly-profile-intro">
+
+                <div>
+
+                    <span class="stackly-kicker">
+                        ACCOUNT
+                    </span>
+
+                    <h2>
+                        Your Profile.
+                    </h2>
+
+                    <p>
+                        Manage your account details, workspace
+                        information and Stackly preferences.
+                    </p>
+
+                </div>
+
+                <div class="stackly-profile-status">
+                    <span class="stackly-status-dot"></span>
+
+                    <span>
+                        ACCOUNT ACTIVE
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="stackly-profile-grid">
+
+                <section class="stackly-profile-card stackly-profile-main-card">
+
+                    <div class="stackly-card-heading">
+
+                        <div>
+                            <span>
+                                PERSONAL
+                            </span>
+
+                            <h3>
+                                Profile Information
+                            </h3>
+                        </div>
+
+                        <div class="stackly-card-heading-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-profile-identity">
+
+                        <div class="stackly-large-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div class="stackly-profile-identity-info">
+
+                            <span>
+                                LOGGED IN AS
+                            </span>
+
+                            <h4 id="profileUserName">
+                                User
+                            </h4>
+
+                            <p id="profileUserEmail">
+                                user@example.com
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-profile-fields">
+
+                        <div class="stackly-profile-field">
+
+                            <span>
+                                EMAIL ADDRESS
+                            </span>
+
+                            <strong id="profileEmailField">
+                                user@example.com
+                            </strong>
+
+                        </div>
+
+                        <div class="stackly-profile-field">
+
+                            <span>
+                                ACCOUNT ROLE
+                            </span>
+
+                            <strong id="profileRole">
+                                User
+                            </strong>
+
+                        </div>
+
+                        <div class="stackly-profile-field">
+
+                            <span>
+                                ACCOUNT STATUS
+                            </span>
+
+                            <strong class="stackly-active-text">
+                                Active
+                            </strong>
+
+                        </div>
+
+                        <div class="stackly-profile-field">
+
+                            <span>
+                                MEMBER SINCE
+                            </span>
+
+                            <strong>
+                                2026
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="stackly-profile-card stackly-account-card">
+
+                    <div class="stackly-card-heading">
+
+                        <div>
+                            <span>
+                                WORKSPACE
+                            </span>
+
+                            <h3>
+                                Account Overview
+                            </h3>
+                        </div>
+
+                        <div class="stackly-card-heading-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-overview-list">
+
+                        <div class="stackly-overview-row">
+
+                            <div class="stackly-overview-icon">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Active Projects
+                                </strong>
+
+                                <span>
+                                    3 projects in progress
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="stackly-overview-row">
+
+                            <div class="stackly-overview-icon">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Messages
+                                </strong>
+
+                                <span>
+                                    3 unread conversations
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="stackly-overview-row">
+
+                            <div class="stackly-overview-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Next Review
+                                </strong>
+
+                                <span>
+                                    Friday · Project milestone
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="stackly-profile-card stackly-preferences-card">
+
+                    <div class="stackly-card-heading">
+
+                        <div>
+                            <span>
+                                PREFERENCES
+                            </span>
+
+                            <h3>
+                                Workspace Settings
+                            </h3>
+                        </div>
+
+                        <div class="stackly-card-heading-icon">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-preference-list">
+
+                        <div class="stackly-preference-row">
+
+                            <div>
+
+                                <strong>
+                                    Email Notifications
+                                </strong>
+
+                                <span>
+                                    Receive important project updates
+                                </span>
+
+                            </div>
+
+                            <label class="stackly-toggle">
+
+                                <input
+                                    type="checkbox"
+                                    id="emailNotifications"
+                                    checked
+                                >
+
+                                <span class="stackly-toggle-slider"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="stackly-preference-row">
+
+                            <div>
+
+                                <strong>
+                                    Project Updates
+                                </strong>
+
+                                <span>
+                                    Get notified about milestone changes
+                                </span>
+
+                            </div>
+
+                            <label class="stackly-toggle">
+
+                                <input
+                                    type="checkbox"
+                                    id="projectUpdates"
+                                    checked
+                                >
+
+                                <span class="stackly-toggle-slider"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="stackly-preference-row">
+
+                            <div>
+
+                                <strong>
+                                    Weekly Summary
+                                </strong>
+
+                                <span>
+                                    Receive your workspace activity summary
+                                </span>
+
+                            </div>
+
+                            <label class="stackly-toggle">
+
+                                <input
+                                    type="checkbox"
+                                    id="weeklySummary"
+                                >
+
+                                <span class="stackly-toggle-slider"></span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="stackly-profile-card stackly-security-card">
+
+                    <div class="stackly-card-heading">
+
+                        <div>
+                            <span>
+                                SECURITY
+                            </span>
+
+                            <h3>
+                                Account Security
+                            </h3>
+                        </div>
+
+                        <div class="stackly-card-heading-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-security-box">
+
+                        <div class="stackly-security-icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Password Protected
+                            </strong>
+
+                            <p>
+                                Your account is protected by your
+                                Stackly login credentials.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <a
+    href="error.html"
+    class="stackly-security-button"
+    id="changePasswordButton"
+>
+    <i class="fa-solid fa-key"></i>
+
+    <span>
+        Change Password
+    </span>
+</a>
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="myprofile.js"></script>
+
+</body>
+</html>

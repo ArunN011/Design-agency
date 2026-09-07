@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | Stackly</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+
+<body>
+
+    <aside
+        class="stackly-admin-sidebar"
+        id="adminSidebar"
+    >
+
+        <div class="stackly-admin-brand">
+
+            <a href="admin-dashboard.html">
+
+                <img
+                    src="Assest/whitelogo.webp"
+                    alt="Stackly Design Agency"
+                    class="stackly-admin-logo"
+                >
+
+            </a>
+
+        </div>
+
+        <div class="stackly-admin-user">
+
+            <div class="stackly-admin-user-icon">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+
+            <div class="stackly-admin-user-info">
+
+                <strong id="sidebarAdminEmail">
+                    admin@stackly.com
+                </strong>
+
+                <span id="sidebarAdminRole">
+                    Admin
+                </span>
+
+            </div>
+
+        </div>
+
+        <nav class="stackly-admin-nav">
+
+            <div class="stackly-admin-group">
+
+                <span class="stackly-admin-label">
+                    OVERVIEW
+                </span>
+
+                <a
+                    href="admin-dashboard.html"
+                    class="stackly-admin-link active"
+                >
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+            </div>
+
+            <div class="stackly-admin-group">
+
+                <span class="stackly-admin-label">
+                    MANAGEMENT
+                </span>
+
+
+
+                <a
+                    href="projects.html"
+                    class="stackly-admin-link"
+                >
+
+                    <i class="fa-solid fa-folder-open"></i>
+
+                    <span>
+                        Projects
+                    </span>
+
+                </a>
+
+            </div>
+
+            <div class="stackly-admin-group">
+
+                <span class="stackly-admin-label">
+                    SYSTEM
+                </span>
+
+                <a
+                    href="analytics.html"
+                    class="stackly-admin-link"
+                >
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <span>
+                        Analytics
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+        <div class="stackly-admin-sidebar-bottom">
+
+            <a
+                href="login.html"
+                class="stackly-admin-link"
+                id="adminLogout"
+            >
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <div
+        class="stackly-admin-overlay"
+        id="adminOverlay"
+    ></div>
+
+    <main class="stackly-admin-main">
+
+        <header class="stackly-admin-header">
+
+            <div class="stackly-admin-header-left">
+
+                <button
+                    type="button"
+                    class="stackly-admin-menu-button"
+                    id="adminMenuButton"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="stackly-admin-page-title">
+
+                    <span>
+                        ADMINISTRATION
+                    </span>
+
+                    <h1>
+                        Dashboard
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <a
+                href="admin-dashboard.html"
+                class="stackly-admin-mobile-brand"
+            >
+
+                <img
+                    src="Assest/whitelogo.webp"
+                    alt="Stackly Design Agency"
+                    class="stackly-admin-mobile-logo"
+                >
+
+            </a>
+
+            <div class="stackly-admin-header-actions">
+
+                <button
+                    type="button"
+                    class="stackly-admin-header-button"
+                    aria-label="Search"
+                >
+                <a href="error.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </button>
+
+                <button
+                    type="button"
+                    class="stackly-admin-header-button"
+                    aria-label="Notifications"
+                >
+                    <a href="error.html">
+                    <i class="fa-regular fa-bell"></i>
+                    </a>
+
+                    <span class="stackly-admin-notification-dot"></span>
+
+                </button>
+
+                <div class="stackly-admin-header-profile">
+
+                    <div class="stackly-admin-profile-icon">
+                        <a href="error.html">
+
+                        <i class="fa-solid fa-user-shield"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="stackly-admin-profile-text">
+
+                        <strong id="headerAdminName">
+                            Admin
+                        </strong>
+
+                        <span id="headerAdminRole">
+                            Administrator
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="stackly-admin-content">
+
+            <div class="stackly-admin-welcome">
+
+                <div class="stackly-admin-welcome-copy">
+
+                    <span class="stackly-admin-kicker">
+                        CONTROL CENTER
+                    </span>
+
+                    <h2>
+                        Command the Work.
+                    </h2>
+
+                    <p>
+                        Monitor projects, messages, team activity
+                        and workspace performance from one place.
+                    </p>
+
+                </div>
+
+                <div class="stackly-admin-date-card">
+
+                    <span>
+                        TODAY
+                    </span>
+
+                    <strong id="adminCurrentDate">
+                        Monday, September 7, 2026
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <div class="stackly-admin-stats">
+
+                <article class="stackly-admin-stat-card">
+
+                    <div class="stackly-admin-stat-icon lime">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+
+                    <div class="stackly-admin-stat-copy">
+
+                        <span>
+                            ACTIVE PROJECTS
+                        </span>
+
+                        <strong
+                            class="admin-counter"
+                            data-target="24"
+                        >
+                            0
+                        </strong>
+
+                        <small>
+                            +12% this month
+                        </small>
+
+                    </div>
+
+                    <div class="stackly-admin-stat-arrow">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+
+                </article>
+
+                <article class="stackly-admin-stat-card">
+
+                    <div class="stackly-admin-stat-icon dark">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div class="stackly-admin-stat-copy">
+
+                        <span>
+                            TEAM MEMBERS
+                        </span>
+
+                        <strong
+                            class="admin-counter"
+                            data-target="18"
+                        >
+                            0
+                        </strong>
+
+                        <small>
+                            2 new this month
+                        </small>
+
+                    </div>
+
+                    <div class="stackly-admin-stat-arrow">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+
+                </article>
+
+                <article class="stackly-admin-stat-card">
+
+                    <div class="stackly-admin-stat-icon beige">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <div class="stackly-admin-stat-copy">
+
+                        <span>
+                            OPEN MESSAGES
+                        </span>
+
+                        <strong
+                            class="admin-counter"
+                            data-target="37"
+                        >
+                            0
+                        </strong>
+
+                        <small>
+                            3 require attention
+                        </small>
+
+                    </div>
+
+                    <div class="stackly-admin-stat-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </article>
+
+                <article class="stackly-admin-stat-card">
+
+                    <div class="stackly-admin-stat-icon outline">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+
+                    <div class="stackly-admin-stat-copy">
+
+                        <span>
+                            COMPLETION RATE
+                        </span>
+
+                        <strong>
+                            87%
+                        </strong>
+
+                        <small>
+                            +6.4% this quarter
+                        </small>
+
+                    </div>
+
+                    <div class="stackly-admin-stat-arrow">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="stackly-admin-grid-top">
+
+                <section class="stackly-admin-card stackly-performance-card">
+
+                    <div class="stackly-admin-card-header">
+
+                        <div>
+
+                            <span>
+                                PERFORMANCE
+                            </span>
+
+                            <h3>
+                                Project Overview
+                            </h3>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-admin-small-button"
+                        >
+                        <a href="error.html">
+                            This Month
+                            <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </button>
+
+                    </div>
+
+                    <div class="stackly-performance-summary">
+
+                        <div>
+
+                            <span>
+                                PROJECT DELIVERY
+                            </span>
+
+                            <strong>
+                                87%
+                            </strong>
+
+                            <p>
+                                Overall project completion
+                            </p>
+
+                        </div>
+
+                        <div class="stackly-performance-circle">
+
+                            <svg
+                                viewBox="0 0 120 120"
+                                aria-hidden="true"
+                            >
+
+                                <circle
+                                    cx="60"
+                                    cy="60"
+                                    r="48"
+                                    class="performance-track"
+                                ></circle>
+
+                                <circle
+                                    cx="60"
+                                    cy="60"
+                                    r="48"
+                                    class="performance-value"
+                                    id="performanceCircle"
+                                ></circle>
+
+                            </svg>
+
+                            <strong>
+                                87%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-progress-list">
+
+                        <div class="stackly-progress-item">
+
+                            <div>
+
+                                <span>
+                                    BRAND STRATEGY
+                                </span>
+
+                                <strong>
+                                    92%
+                                </strong>
+
+                            </div>
+
+                            <div class="stackly-progress-bar">
+                                <span style="width: 92%"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="stackly-progress-item">
+
+                            <div>
+
+                                <span>
+                                    PRODUCT DESIGN
+                                </span>
+
+                                <strong>
+                                    84%
+                                </strong>
+
+                            </div>
+
+                            <div class="stackly-progress-bar">
+                                <span style="width: 84%"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="stackly-progress-item">
+
+                            <div>
+
+                                <span>
+                                    DEVELOPMENT
+                                </span>
+
+                                <strong>
+                                    78%
+                                </strong>
+
+                            </div>
+
+                            <div class="stackly-progress-bar">
+                                <span style="width: 78%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="stackly-admin-card stackly-activity-card">
+
+                    <div class="stackly-admin-card-header">
+
+                        <div>
+
+                            <span>
+                                ACTIVITY
+                            </span>
+
+                            <h3>
+                                Recent Actions
+                            </h3>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="stackly-more-button"
+                        >
+                        <a href="error.html">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            </a>
+                        </button>
+
+                    </div>
+
+                    <div class="stackly-admin-activity-list">
+
+                        <div class="stackly-admin-activity">
+
+                            <div class="activity-icon lime">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Project approved
+                                </strong>
+
+                                <span>
+                                    Nova Brand System
+                                </span>
+
+                            </div>
+
+                            <time>
+                                10m
+                            </time>
+
+                        </div>
+
+                        <div class="stackly-admin-activity">
+
+                            <div class="activity-icon dark">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    New member added
+                                </strong>
+
+                                <span>
+                                    Creative team
+                                </span>
+
+                            </div>
+
+                            <time>
+                                32m
+                            </time>
+
+                        </div>
+
+                        <div class="stackly-admin-activity">
+
+                            <div class="activity-icon beige">
+                                <i class="fa-solid fa-comment"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    New message received
+                                </strong>
+
+                                <span>
+                                    Aether Digital
+                                </span>
+
+                            </div>
+
+                            <time>
+                                1h
+                            </time>
+
+                        </div>
+
+                        <div class="stackly-admin-activity">
+
+                            <div class="activity-icon outline">
+                                <i class="fa-solid fa-file-arrow-up"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Files uploaded
+                                </strong>
+
+                                <span>
+                                    Monoform project
+                                </span>
+
+                            </div>
+
+                            <time>
+                                2h
+                            </time>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="stackly-admin-grid-bottom">
+
+                <section class="stackly-admin-card stackly-projects-card">
+
+                    <div class="stackly-admin-card-header">
+
+                        <div>
+
+                            <span>
+                                WORKSPACE
+                            </span>
+
+                            <h3>
+                                Active Projects
+                            </h3>
+
+                        </div>
+
+                        <a
+                            href="error.html"
+                            class="stackly-view-all"
+                        >
+                            View All
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="stackly-project-table">
+
+                        <div class="stackly-project-row heading">
+
+                            <span>
+                                PROJECT
+                            </span>
+
+                            <span>
+                                CLIENT
+                            </span>
+
+                            <span>
+                                PROGRESS
+                            </span>
+
+                            <span>
+                                STATUS
+                            </span>
+
+                        </div>
+
+                        <div class="stackly-project-row">
+
+                            <div class="stackly-project-name">
+
+                                <div class="project-symbol lime">
+                                    N
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Nova Brand System
+                                    </strong>
+
+                                    <span>
+                                        Branding
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span>
+                                Nova Labs
+                            </span>
+
+                            <div class="project-progress">
+
+                                <div>
+                                    <span>92%</span>
+                                </div>
+
+                                <div class="project-progress-bar">
+                                    <span style="width:92%"></span>
+                                </div>
+
+                            </div>
+
+                            <span class="project-status completed">
+                                On Track
+                            </span>
+
+                        </div>
+
+                        <div class="stackly-project-row">
+
+                            <div class="stackly-project-name">
+
+                                <div class="project-symbol dark">
+                                    A
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Aether Digital
+                                    </strong>
+
+                                    <span>
+                                        Digital Experience
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span>
+                                Aether
+                            </span>
+
+                            <div class="project-progress">
+
+                                <div>
+                                    <span>68%</span>
+                                </div>
+
+                                <div class="project-progress-bar">
+                                    <span style="width:68%"></span>
+                                </div>
+
+                            </div>
+
+                            <span class="project-status review">
+                                Review
+                            </span>
+
+                        </div>
+
+                        <div class="stackly-project-row">
+
+                            <div class="stackly-project-name">
+
+                                <div class="project-symbol beige">
+                                    M
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Monoform
+                                    </strong>
+
+                                    <span>
+                                        Product Design
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span>
+                                Monoform
+                            </span>
+
+                            <div class="project-progress">
+
+                                <div>
+                                    <span>45%</span>
+                                </div>
+
+                                <div class="project-progress-bar">
+                                    <span style="width:45%"></span>
+                                </div>
+
+                            </div>
+
+                            <span class="project-status pending">
+                                Pending
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="stackly-admin-card stackly-quick-card">
+
+                    <div class="stackly-admin-card-header">
+
+                        <div>
+
+                            <span>
+                                SHORTCUTS
+                            </span>
+
+                            <h3>
+                                Admin Actions
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-quick-actions">
+
+                        <a
+                            href="error.html"
+                            class="stackly-quick-action"
+                        >
+
+                            <div>
+                                <i class="fa-solid fa-message"></i>
+                            </div>
+
+                            <span>
+                                Messages
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                        <a
+                            href="error.html"
+                            class="stackly-quick-action"
+                        >
+
+                            <div>
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+
+                            <span>
+                                Add Team Member
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                        <a
+                            href="error.html"
+                            class="stackly-quick-action"
+                        >
+
+                            <div>
+                                <i class="fa-solid fa-folder-plus"></i>
+                            </div>
+
+                            <span>
+                                New Project
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                        <a
+                            href="error.html"
+                            class="stackly-quick-action"
+                        >
+
+                            <div>
+                                <i class="fa-solid fa-chart-column"></i>
+                            </div>
+
+                            <span>
+                                View Analytics
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <section class="stackly-admin-card stackly-team-overview">
+
+                <div class="stackly-admin-card-header">
+
+                    <div>
+
+                        <span>
+                            PEOPLE
+                        </span>
+
+                        <h3>
+                            Team Overview
+                        </h3>
+
+                    </div>
+
+                    <a
+                        href="error.html"
+                        class="stackly-view-all"
+                    >
+                        Manage Team
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="stackly-team-list">
+
+                    <div class="stackly-team-member">
+
+                        <div class="stackly-team-avatar lime">
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </div>
+
+                        <div class="stackly-team-member-info">
+
+                            <strong>
+                                Creative Director
+                            </strong>
+
+                            <span>
+                                4 active projects
+                            </span>
+
+                        </div>
+
+                        <div class="stackly-team-indicator active">
+                            Active
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-team-member">
+
+                        <div class="stackly-team-avatar dark">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+
+                        <div class="stackly-team-member-info">
+
+                            <strong>
+                                Product Designer
+                            </strong>
+
+                            <span>
+                                3 active projects
+                            </span>
+
+                        </div>
+
+                        <div class="stackly-team-indicator active">
+                            Active
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-team-member">
+
+                        <div class="stackly-team-avatar beige">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <div class="stackly-team-member-info">
+
+                            <strong>
+                                Lead Developer
+                            </strong>
+
+                            <span>
+                                5 active projects
+                            </span>
+
+                        </div>
+
+                        <div class="stackly-team-indicator busy">
+                            Busy
+                        </div>
+
+                    </div>
+
+                    <div class="stackly-team-member">
+
+                        <div class="stackly-team-avatar outline">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+
+                        <div class="stackly-team-member-info">
+
+                            <strong>
+                                Strategy Lead
+                            </strong>
+
+                            <span>
+                                2 active projects
+                            </span>
+
+                        </div>
+
+                        <div class="stackly-team-indicator active">
+                            Active
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="admin-dashboard.js"></script>
+
+</body>
+</html>

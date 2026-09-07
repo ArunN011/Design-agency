@@ -1,0 +1,1323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #f2f0e9;
+    color: #090909;
+    font-family: "DM Sans", sans-serif;
+}
+
+body.stackly-analytics-menu-open {
+    overflow: hidden;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    border: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.stackly-analytics-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 272px;
+    height: 100vh;
+    height: 100dvh;
+    padding: 29px 15px 18px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background: #090909;
+    color: #f2f0e9;
+    z-index: 2000;
+    scrollbar-width: thin;
+    scrollbar-color: #303030 transparent;
+}
+
+.stackly-analytics-brand {
+    padding: 0 8px 28px;
+    border-bottom: 1px solid rgba(242, 240, 233, 0.1);
+}
+
+.stackly-analytics-brand a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.stackly-analytics-logo {
+    width: 148px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.stackly-analytics-user {
+    margin-top: 21px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    background: #121212;
+    border: 1px solid rgba(242, 240, 233, 0.11);
+}
+
+.stackly-analytics-user-icon {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #202b10;
+    color: #b8ff33;
+}
+
+.stackly-analytics-user-info {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.stackly-analytics-user-info strong {
+    max-width: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+}
+
+.stackly-analytics-user-info span {
+    color: #777777;
+    font-size: 14px;
+}
+
+.stackly-analytics-nav {
+    padding-top: 31px;
+}
+
+.stackly-analytics-group {
+    margin-bottom: 29px;
+}
+
+.stackly-analytics-label {
+    display: block;
+    margin: 0 10px 10px;
+    color: #626262;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.stackly-analytics-link {
+    min-height: 42px;
+    padding: 0 11px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #8c8c8c;
+    font-size: 15px;
+    font-weight: 600;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.stackly-analytics-link i {
+    width: 19px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.stackly-analytics-link:hover {
+    color: #ffffff;
+    transform: translateX(2px);
+}
+
+.stackly-analytics-link.active {
+    background: #b8ff33;
+    color: #090909;
+    transform: none;
+}
+
+.stackly-analytics-count {
+    min-width: 20px;
+    height: 20px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #090909;
+    color: #b8ff33;
+    font-size: 11px;
+}
+
+.stackly-analytics-sidebar-bottom {
+    margin-top: auto;
+    padding-top: 19px;
+    border-top: 1px solid rgba(242, 240, 233, 0.1);
+}
+
+.stackly-analytics-main {
+    width: calc(100% - 272px);
+    min-height: 100vh;
+    margin-left: 272px;
+    background: #f2f0e9;
+}
+
+.stackly-analytics-header {
+    min-height: 78px;
+    padding: 0 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(242, 240, 233, 0.96);
+    border-bottom: 1px solid rgba(9, 9, 9, 0.09);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.stackly-analytics-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.stackly-analytics-menu-button {
+    display: none;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: #090909;
+    border: 1px solid rgba(9, 9, 9, 0.12);
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.stackly-analytics-page-title {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.stackly-analytics-page-title span {
+    color: #777777;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+
+.stackly-analytics-page-title h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.stackly-analytics-mobile-brand {
+    display: none;
+}
+
+.stackly-analytics-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stackly-analytics-header-button {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: #090909;
+    border: 1px solid rgba(9, 9, 9, 0.11);
+    cursor: pointer;
+}
+
+.stackly-analytics-header-button:hover {
+    background: #090909;
+    color: #b8ff33;
+}
+
+.stackly-analytics-notification-dot {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #b8ff33;
+}
+
+.stackly-analytics-profile {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.stackly-analytics-profile-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #090909;
+    color: #b8ff33;
+}
+
+.stackly-analytics-profile-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.stackly-analytics-profile-text strong {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+}
+
+.stackly-analytics-profile-text span {
+    color: #777777;
+    font-size: 12px;
+}
+
+.stackly-analytics-overlay {
+    display: none;
+}
+
+.stackly-analytics-content {
+    padding: 38px 33px 50px;
+}
+
+.stackly-analytics-intro {
+    margin-bottom: 27px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.stackly-analytics-intro-copy {
+    max-width: 750px;
+}
+
+.stackly-analytics-kicker {
+    display: block;
+    margin-bottom: 9px;
+    color: #737373;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+
+.stackly-analytics-intro h2 {
+    margin-bottom: 9px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(40px, 4vw, 55px);
+    line-height: 0.98;
+    letter-spacing: -2px;
+}
+
+.stackly-analytics-intro p {
+    max-width: 680px;
+    color: #717171;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.stackly-analytics-period {
+    min-height: 43px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #090909;
+    color: #b8ff33;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.stackly-analytics-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 13px;
+    margin-bottom: 17px;
+}
+
+.stackly-analytics-stat {
+    min-height: 119px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    background: #ffffff;
+    border: 1px solid rgba(9, 9, 9, 0.09);
+}
+
+.stackly-analytics-stat-icon {
+    width: 39px;
+    height: 39px;
+    flex: 0 0 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.stackly-analytics-stat-icon.lime {
+    background: #b8ff33;
+    color: #090909;
+}
+
+.stackly-analytics-stat-icon.dark {
+    background: #090909;
+    color: #b8ff33;
+}
+
+.stackly-analytics-stat-icon.beige {
+    background: #dedbd2;
+    color: #4d4b45;
+}
+
+.stackly-analytics-stat-icon.outline {
+    background: #f2f0e9;
+    color: #090909;
+    border: 1px solid rgba(9, 9, 9, 0.1);
+}
+
+.stackly-analytics-stat > div:last-child {
+    min-width: 0;
+}
+
+.stackly-analytics-stat span {
+    display: block;
+    margin-bottom: 5px;
+    color: #7c7c7c;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+}
+
+.stackly-analytics-stat strong {
+    display: block;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.stackly-analytics-stat small {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.stackly-analytics-stat small.positive {
+    color: #67951b;
+}
+
+.stackly-analytics-main-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(290px, 0.75fr);
+    gap: 17px;
+    margin-bottom: 17px;
+}
+
+.stackly-analytics-card {
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid rgba(9, 9, 9, 0.09);
+    overflow: hidden;
+}
+
+.stackly-analytics-card-header {
+    min-height: 79px;
+    padding: 16px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid rgba(9, 9, 9, 0.08);
+}
+
+.stackly-analytics-card-header > div:first-child {
+    min-width: 0;
+}
+
+.stackly-analytics-card-header span {
+    color: #7b7b7b;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.stackly-analytics-card-header h3 {
+    margin-top: 4px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 19px;
+}
+
+.stackly-chart-legend {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.stackly-chart-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #777777;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0;
+}
+
+.stackly-chart-legend i {
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    background: #b8ff33;
+}
+
+.stackly-revenue-summary {
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.stackly-revenue-summary strong {
+    display: block;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 28px;
+}
+
+.stackly-revenue-summary span {
+    display: block;
+    margin-top: 3px;
+    color: #777777;
+    font-size: 11px;
+}
+
+.stackly-revenue-growth {
+    min-height: 30px;
+    padding: 0 9px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #e7ffd5;
+    color: #5d8813;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.stackly-line-chart {
+    height: 278px;
+    padding: 0 17px 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.stackly-chart-y {
+    width: 30px;
+    padding: 5px 0 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+.stackly-chart-y span {
+    color: #9a9a9a;
+    font-size: 9px;
+}
+
+.stackly-chart-area {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+}
+
+.stackly-chart-grid-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(9, 9, 9, 0.07);
+}
+
+.stackly-chart-grid-line.line-1 {
+    top: 0;
+}
+
+.stackly-chart-grid-line.line-2 {
+    top: 25%;
+}
+
+.stackly-chart-grid-line.line-3 {
+    top: 50%;
+}
+
+.stackly-chart-grid-line.line-4 {
+    top: 75%;
+}
+
+.stackly-chart-grid-line.line-5 {
+    top: 100%;
+}
+
+.stackly-revenue-svg {
+    position: absolute;
+    inset: 0 0 22px;
+    width: 100%;
+    height: calc(100% - 22px);
+    overflow: visible;
+}
+
+.revenue-area {
+    fill: url(#revenueFill);
+}
+
+.revenue-line {
+    fill: none;
+    stroke: #090909;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.revenue-point {
+    fill: #b8ff33;
+    stroke: #090909;
+    stroke-width: 3;
+}
+
+.stackly-chart-x {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stackly-chart-x span {
+    color: #888888;
+    font-size: 9px;
+}
+
+.stackly-project-performance {
+    min-height: 420px;
+}
+
+.stackly-analytics-more {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f0e9;
+    color: #090909;
+    cursor: pointer;
+}
+
+.stackly-donut-wrap {
+    min-height: 238px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stackly-donut {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background:
+        conic-gradient(
+            #b8ff33 0deg 250deg,
+            #dedbd2 250deg 315deg,
+            #090909 315deg 360deg
+        );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stackly-donut::before {
+    content: "";
+    position: absolute;
+    inset: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.stackly-donut-center {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.stackly-donut-center strong {
+    display: block;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 31px;
+}
+
+.stackly-donut-center span {
+    display: block;
+    margin-top: 2px;
+    color: #7b7b7b;
+    font-size: 11px;
+}
+
+.stackly-donut-legend {
+    padding: 0 17px 17px;
+}
+
+.stackly-donut-legend > div {
+    min-height: 38px;
+    display: grid;
+    grid-template-columns: 9px 1fr auto;
+    gap: 8px;
+    align-items: center;
+    border-bottom: 1px solid rgba(9, 9, 9, 0.07);
+}
+
+.stackly-donut-legend > div:last-child {
+    border-bottom: 0;
+}
+
+.legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.legend-dot.on-track {
+    background: #b8ff33;
+}
+
+.legend-dot.review {
+    background: #dedbd2;
+}
+
+.legend-dot.delayed {
+    background: #090909;
+}
+
+.stackly-donut-legend span:not(.legend-dot) {
+    color: #777777;
+    font-size: 12px;
+}
+
+.stackly-donut-legend strong {
+    font-size: 12px;
+}
+
+.stackly-analytics-bottom-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 17px;
+    margin-bottom: 17px;
+}
+
+.stackly-header-value {
+    color: #639011 !important;
+    font-size: 14px !important;
+    letter-spacing: 0 !important;
+}
+
+.stackly-bar-chart {
+    height: 264px;
+    padding: 18px 17px 18px;
+    display: flex;
+    gap: 11px;
+}
+
+.stackly-bar-y {
+    width: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.stackly-bar-y span {
+    color: #999999;
+    font-size: 9px;
+}
+
+.stackly-bars-area {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 17px;
+    min-width: 0;
+}
+
+.stackly-bar-grid {
+    position: absolute;
+    inset: 0 0 25px;
+    background:
+        linear-gradient(
+            to bottom,
+            transparent calc(25% - 1px),
+            rgba(9, 9, 9, 0.07) 25%,
+            transparent calc(25% + 1px),
+            transparent calc(50% - 1px),
+            rgba(9, 9, 9, 0.07) 50%,
+            transparent calc(50% + 1px),
+            transparent calc(75% - 1px),
+            rgba(9, 9, 9, 0.07) 75%,
+            transparent calc(75% + 1px),
+            transparent calc(100% - 1px),
+            rgba(9, 9, 9, 0.07) 100%
+        );
+}
+
+.analytics-bar-group {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+}
+
+.analytics-bar {
+    width: min(42px, 70%);
+    min-height: 8px;
+    display: block;
+    background: #dedbd2;
+    transition: height 0.9s ease;
+}
+
+.analytics-bar.highlight {
+    background: #b8ff33;
+}
+
+.analytics-bar-group small {
+    color: #7b7b7b;
+    font-size: 10px;
+}
+
+.stackly-service-list {
+    padding: 6px 17px 11px;
+}
+
+.stackly-service-row {
+    min-height: 61px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+    border-bottom: 1px solid rgba(9, 9, 9, 0.07);
+}
+
+.stackly-service-row:last-child {
+    border-bottom: 0;
+}
+
+.stackly-service-name {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-width: 0;
+}
+
+.service-number {
+    color: #999999;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.stackly-service-name strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 12px;
+}
+
+.stackly-service-progress {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 30px;
+    align-items: center;
+    gap: 8px;
+}
+
+.stackly-service-progress > div {
+    height: 6px;
+    overflow: hidden;
+    background: #e7e5de;
+}
+
+.stackly-service-progress > div span {
+    display: block;
+    height: 100%;
+    background: #090909;
+}
+
+.stackly-service-progress strong {
+    font-size: 10px;
+    text-align: right;
+}
+
+.stackly-engagement-card {
+    margin-bottom: 10px;
+}
+
+.stackly-engagement-total {
+    text-align: right;
+}
+
+.stackly-engagement-total span {
+    display: block;
+    letter-spacing: 1px !important;
+}
+
+.stackly-engagement-total strong {
+    display: block;
+    margin-top: 3px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+}
+
+.stackly-engagement-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stackly-engagement-stat {
+    min-height: 104px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    border-right: 1px solid rgba(9, 9, 9, 0.07);
+}
+
+.stackly-engagement-stat:last-child {
+    border-right: 0;
+}
+
+.stackly-engagement-icon {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stackly-engagement-icon.lime {
+    background: #b8ff33;
+    color: #090909;
+}
+
+.stackly-engagement-icon.dark {
+    background: #090909;
+    color: #b8ff33;
+}
+
+.stackly-engagement-icon.beige {
+    background: #dedbd2;
+    color: #4d4b45;
+}
+
+.stackly-engagement-icon.outline {
+    background: #f2f0e9;
+    color: #090909;
+    border: 1px solid rgba(9, 9, 9, 0.1);
+}
+
+.stackly-engagement-stat strong {
+    display: block;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 23px;
+}
+
+.stackly-engagement-stat span {
+    display: block;
+    margin-top: 2px;
+    color: #777777;
+    font-size: 11px;
+}
+
+@media (max-width: 1250px) {
+
+    .stackly-analytics-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stackly-analytics-main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stackly-analytics-bottom-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .stackly-analytics-sidebar {
+        left: -290px;
+        width: 272px;
+        transition: left 0.32s ease;
+    }
+
+    .stackly-analytics-sidebar.mobile-open {
+        left: 0;
+    }
+
+    .stackly-analytics-overlay {
+        position: fixed;
+        inset: 0;
+        display: block;
+        background: rgba(0, 0, 0, 0.58);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 1900;
+        transition:
+            opacity 0.25s ease,
+            visibility 0.25s ease;
+    }
+
+    .stackly-analytics-overlay.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .stackly-analytics-main {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 66px;
+    }
+
+    .stackly-analytics-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 66px;
+        min-height: 66px;
+        padding: 0 13px;
+        background: #ffffff;
+        z-index: 1500;
+    }
+
+    .stackly-analytics-header-left {
+        width: 43px;
+        flex: 0 0 43px;
+    }
+
+    .stackly-analytics-menu-button {
+        display: flex;
+    }
+
+    .stackly-analytics-page-title {
+        display: none;
+    }
+
+    .stackly-analytics-mobile-brand {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .stackly-analytics-mobile-logo {
+        width: 126px;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        filter: invert(1);
+    }
+
+    .stackly-analytics-header-actions {
+        display: none !important;
+    }
+
+    .stackly-analytics-content {
+        padding: 28px 18px 40px;
+    }
+
+    .stackly-analytics-intro {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .stackly-analytics-period {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .stackly-engagement-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stackly-engagement-stat:nth-child(2) {
+        border-right: 0;
+    }
+
+    .stackly-engagement-stat:nth-child(-n + 2) {
+        border-bottom: 1px solid rgba(9, 9, 9, 0.07);
+    }
+}
+
+@media (max-width: 767px) {
+
+    .stackly-analytics-main {
+        padding-top: 64px;
+    }
+
+    .stackly-analytics-header {
+        height: 64px;
+        min-height: 64px;
+        padding: 0 11px;
+    }
+
+    .stackly-analytics-menu-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .stackly-analytics-mobile-logo {
+        width: 116px;
+    }
+
+    .stackly-analytics-content {
+        padding: 22px 13px 32px;
+    }
+
+    .stackly-analytics-intro h2 {
+        font-size: 39px;
+        letter-spacing: -1.5px;
+    }
+
+    .stackly-analytics-intro p {
+        font-size: 15px;
+    }
+
+    .stackly-analytics-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stackly-analytics-stat {
+        min-height: 111px;
+        padding: 12px;
+    }
+
+    .stackly-analytics-stat-icon {
+        width: 35px;
+        height: 35px;
+        flex-basis: 35px;
+    }
+
+    .stackly-analytics-stat strong {
+        font-size: 25px;
+    }
+
+    .stackly-analytics-card-header {
+        padding: 14px;
+    }
+
+    .stackly-revenue-summary {
+        padding: 14px;
+    }
+
+    .stackly-line-chart {
+        height: 235px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .stackly-donut-wrap {
+        min-height: 215px;
+    }
+
+    .stackly-bar-chart {
+        height: 230px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .stackly-service-list {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .stackly-service-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 10px 0;
+    }
+
+    .stackly-service-progress {
+        padding-left: 26px;
+    }
+
+    .stackly-engagement-stat {
+        min-height: 94px;
+        padding: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .stackly-analytics-main {
+        padding-top: 62px;
+    }
+
+    .stackly-analytics-header {
+        height: 62px;
+        min-height: 62px;
+        padding: 0 9px;
+    }
+
+    .stackly-analytics-menu-button {
+        width: 39px;
+        height: 39px;
+        font-size: 16px;
+    }
+
+    .stackly-analytics-mobile-logo {
+        width: 105px;
+    }
+
+    .stackly-analytics-content {
+        padding: 19px 9px 27px;
+    }
+
+    .stackly-analytics-intro h2 {
+        font-size: 33px;
+    }
+
+    .stackly-analytics-intro p {
+        font-size: 15px;
+    }
+
+    .stackly-analytics-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stackly-analytics-stat {
+        min-height: 103px;
+    }
+
+    .stackly-revenue-summary strong {
+        font-size: 24px;
+    }
+
+    .stackly-line-chart {
+        height: 215px;
+    }
+
+    .stackly-chart-y {
+        width: 24px;
+    }
+
+    .stackly-donut {
+        width: 150px;
+        height: 150px;
+    }
+
+    .stackly-donut::before {
+        inset: 15px;
+    }
+
+    .stackly-donut-center strong {
+        font-size: 27px;
+    }
+
+    .stackly-bar-chart {
+        height: 215px;
+    }
+
+    .stackly-engagement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stackly-engagement-stat {
+        border-right: 0;
+        border-bottom: 1px solid rgba(9, 9, 9, 0.07);
+    }
+
+    .stackly-engagement-stat:last-child {
+        border-bottom: 0;
+    }
+
+    .stackly-engagement-stat:nth-child(2) {
+        border-bottom: 1px solid rgba(9, 9, 9, 0.07);
+    }
+
+    .stackly-engagement-total {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .stackly-analytics-mobile-logo {
+        width: 97px;
+    }
+
+    .stackly-analytics-intro h2 {
+        font-size: 30px;
+    }
+
+    .stackly-analytics-stat strong {
+        font-size: 23px;
+    }
+}

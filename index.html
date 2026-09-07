@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Agency </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="agency-header" id="agencyHeader">
+
+        <nav class="agency-navbar">
+
+            <div class="navbar-wrapper">
+
+                <a href="index.html" class="agency-logo">
+                    <img src="Assest/whitelogo.webp" alt="Design Agency">
+                </a>
+
+                <div class="desktop-menu">
+
+                    <a href="index.html" class="nav-link active">
+                        <span>Home</span>
+                        <small></small>
+                    </a>
+
+                    <a href="about.html" class="nav-link">
+                        <span>About</span>
+                        <small></small>
+                    </a>
+
+                    <a href="services.html" class="nav-link">
+                        <span>Services</span>
+                        <small></small>
+                    </a>
+
+                    <a href="blog.html" class="nav-link">
+                        <span>Blog</span>
+                        <small></small>
+                    </a>
+
+                    <a href="contact.html" class="nav-link">
+                        <span>Contact</span>
+                        <small></small>
+                    </a>
+
+                </div>
+
+                <div class="desktop-actions">
+
+                    <a href="login.html" class="login-link">
+                        Login
+                    </a>
+
+                    <a href="register.html" class="register-link">
+                        <span>Register</span>
+                        <i class="fa-solid fa-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <button
+                    class="menu-button"
+                    id="menuButton"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    aria-controls="mobileMenu"
+                >
+                    <i class="fa-solid fa-bars menu-open-icon"></i>
+                    <i class="fa-solid fa-xmark menu-close-icon"></i>
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+
+    <aside
+        class="mobile-menu"
+        id="mobileMenu"
+        aria-hidden="true"
+    >
+
+        <div class="mobile-menu-inner">
+
+            <div class="mobile-top">
+
+                <div class="mobile-label">
+                    <span>MENU</span>
+                    <span>00 — 05</span>
+                </div>
+
+                <div class="mobile-top-line"></div>
+
+            </div>
+
+
+            <div class="mobile-links">
+
+                <a href="index.html" class="mobile-link active">
+
+                    <span class="mobile-number">01</span>
+
+                    <span class="mobile-name">
+                        Home
+                    </span>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square mobile-arrow"></i>
+
+                </a>
+
+
+                <a href="about.html" class="mobile-link">
+
+                    <span class="mobile-number">02</span>
+
+                    <span class="mobile-name">
+                        About
+                    </span>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square mobile-arrow"></i>
+
+                </a>
+
+
+                <a href="services.html" class="mobile-link">
+
+                    <span class="mobile-number">03</span>
+
+                    <span class="mobile-name">
+                        Services
+                    </span>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square mobile-arrow"></i>
+
+                </a>
+
+
+                <a href="blog.html" class="mobile-link">
+
+                    <span class="mobile-number">04</span>
+
+                    <span class="mobile-name">
+                        Blog
+                    </span>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square mobile-arrow"></i>
+
+                </a>
+
+
+                <a href="contact.html" class="mobile-link">
+
+                    <span class="mobile-number">05</span>
+
+                    <span class="mobile-name">
+                        Contact
+                    </span>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square mobile-arrow"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="mobile-actions">
+
+                <a href="login.html" class="mobile-login">
+                    Login
+                </a>
+
+                <a href="register.html" class="mobile-register">
+                    <span>Register</span>
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="mobile-footer">
+
+                <div class="footer-socials">
+
+                    <a href="error.html">
+                        Instagram
+                    </a>
+
+                    <a href="error.html">
+                        Behance
+                    </a>
+
+                    <a href="error.html">
+                        Dribbble
+                    </a>
+
+                </div>
+
+                <div class="footer-location">
+                    CHENNAI · INDIA
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+   <section class="creative-hero" id="creativeHero">
+
+    <div class="creative-hero-bg">
+        <div class="creative-grid"></div>
+        <div class="creative-glow creative-glow-one"></div>
+        <div class="creative-glow creative-glow-two"></div>
+
+        <span class="creative-outline-text">CREATE</span>
+        <span class="creative-outline-text creative-outline-two">IMPACT</span>
+    </div>
+
+    <div class="creative-hero-container">
+
+        <div class="creative-hero-top">
+
+            <div class="creative-eyebrow">
+                <span class="creative-dot"></span>
+                <span>CREATIVE DESIGN AGENCY</span>
+            </div>
+
+            <div class="creative-meta">
+                <span>BRAND</span>
+                <span>DIGITAL</span>
+                <span>3D</span>
+            </div>
+
+        </div>
+
+        <div class="creative-hero-content">
+
+            <div class="creative-copy">
+
+                <div class="creative-small-title">
+                    WE BUILD
+                </div>
+
+                <h1 class="creative-title">
+                    <span>IDEAS</span>
+                    <span>INTO</span>
+                    <span class="creative-title-accent">IMPACT.</span>
+                </h1>
+
+                <p class="creative-description">
+                    Bold brands, immersive digital experiences
+                    and creative systems built to stand apart.
+                </p>
+
+                <a href="error.html" class="creative-button">
+                    <span>START A PROJECT</span>
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </a>
+
+            </div>
+
+            <div class="creative-visual">
+
+                <div class="creative-visual-shadow"></div>
+
+                <div class="creative-card creative-card-back">
+                    <div class="creative-card-inner">
+                        <img
+                            src="Assest/design1.webp"
+                            alt="Branding project"
+                        >
+                    </div>
+
+                    <div class="creative-card-info">
+                        <span>01</span>
+                        <span>BRANDING</span>
+                    </div>
+                </div>
+
+                <div class="creative-card creative-card-middle">
+                    <div class="creative-card-inner">
+                        <img
+                            src="Assest/design2.webp"
+                            alt="Digital experience"
+                        >
+                    </div>
+
+                    <div class="creative-card-info">
+                        <span>02</span>
+                        <span>DIGITAL</span>
+                    </div>
+                </div>
+
+                <div class="creative-card creative-card-front">
+                    <div class="creative-card-inner">
+                        <img
+                            src="Assest/design3.webp"
+                            alt="3D design"
+                        >
+                    </div>
+
+                    <div class="creative-card-info">
+                        <span>03</span>
+                        <span>MOTION / 3D</span>
+                    </div>
+                </div>
+
+                <div class="creative-orb creative-orb-one"></div>
+                <div class="creative-orb creative-orb-two"></div>
+                <div class="creative-orb creative-orb-three"></div>
+
+                <div class="creative-ring creative-ring-one"></div>
+                <div class="creative-ring creative-ring-two"></div>
+
+            </div>
+
+        </div>
+
+        <div class="creative-bottom">
+
+            <div class="creative-location">
+                CHENNAI · INDIA
+            </div>
+
+            <div class="creative-marquee">
+
+                <div class="creative-marquee-track">
+
+                    <span>BRANDING</span>
+                    <i class="fa-solid fa-asterisk"></i>
+
+                    <span>DIGITAL</span>
+                    <i class="fa-solid fa-asterisk"></i>
+
+                    <span>MOTION</span>
+                    <i class="fa-solid fa-asterisk"></i>
+
+                    <span>UI / UX</span>
+                    <i class="fa-solid fa-asterisk"></i>
+
+                    <span>3D DESIGN</span>
+                    <i class="fa-solid fa-asterisk"></i>
+
+                    <span>CREATIVE</span>
+                    <i class="fa-solid fa-asterisk"></i>
+
+                </div>
+
+            </div>
+
+            <div class="creative-scroll">
+                <span>SCROLL</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stackly-story-section" id="about">
+
+    <div class="story-container">
+
+        <div class="story-intro">
+
+            <div class="story-heading">
+                <span class="story-label">
+                    <i class="fa-solid fa-circle"></i>
+                    OUR APPROACH
+                </span>
+
+                <h2>
+                    We believe a website
+                    isn't just a digital presence
+                    <span>— it's a powerful tool
+                    that tells your story.</span>
+                </h2>
+            </div>
+
+
+            <div class="story-values">
+
+                <div class="value-column">
+
+                    <a href="error.html" class="value-item">
+                        <i class="fa-solid fa-circle"></i>
+                        <span>Innovations</span>
+                    </a>
+
+                    <a href="error.html" class="value-item">
+                        <i class="fa-solid fa-circle"></i>
+                        <span>Excellence</span>
+                    </a>
+
+                    <a href="error.html" class="value-item">
+                        <i class="fa-solid fa-circle"></i>
+                        <span>Creativity</span>
+                    </a>
+
+                    <a href="error.html" class="value-item">
+                        <i class="fa-solid fa-circle"></i>
+                        <span>Experience</span>
+                    </a>
+
+                    <a href="error.html" class="value-item">
+                        <i class="fa-solid fa-circle"></i>
+                        <span>Passion</span>
+                    </a>
+
+                </div>
+
+
+                <div class="value-column">
+
+                    <a href="error.html" class="value-item">
+                        <i class="fa-solid fa-circle"></i>
+                        <span>Competence</span>
+                    </a>
+
+                    <a href="error.html" class="value-item">
+                        <i class="fa-solid fa-circle"></i>
+                        <span>Web Design</span>
+                    </a>
+
+                    <a href="error.html" class="value-item">
+                        <i class="fa-solid fa-circle"></i>
+                        <span>Development</span>
+                    </a>
+
+                    <a href="#" class="value-item">
+                        <i class="fa-solid fa-circle"></i>
+                        <span>Branding</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="story-stats">
+
+            <article class="story-card story-card-light">
+
+                <div class="card-glow"></div>
+
+                <div class="story-number">
+                    <span class="counter" data-target="98">0</span>
+                    <sup>%</sup>
+                </div>
+
+                <div class="story-card-bottom">
+                    <span>Satisfied customers</span>
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </div>
+
+            </article>
+
+
+            <article class="story-card story-card-object">
+
+                <div class="card-glow"></div>
+
+                <div class="chrome-object">
+                    <div class="chrome-core"></div>
+                    <div class="chrome-ring chrome-ring-one"></div>
+                    <div class="chrome-ring chrome-ring-two"></div>
+                </div>
+
+                <div class="object-caption">
+                    <span>CREATIVE</span>
+                    <span>01</span>
+                </div>
+
+            </article>
+
+
+            <article class="story-card story-card-lime">
+
+                <div class="card-glow"></div>
+
+                <div class="story-number">
+                    <span class="counter" data-target="2">0</span>
+                    <sup>k+</sup>
+                </div>
+
+                <div class="story-card-bottom">
+                    <span>Product launch</span>
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </div>
+
+            </article>
+
+
+            <article class="story-card story-card-dark">
+
+                <div class="card-glow"></div>
+
+                <div class="story-number">
+                    <span class="counter" data-target="35">0</span>
+                    <sup>+</sup>
+                </div>
+
+                <div class="story-card-bottom">
+                    <span>Ready team mates</span>
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <div class="story-bottom-line">
+
+        <span>STACKLY STUDIO</span>
+
+        <div class="story-line"></div>
+
+        <span>01 / 04</span>
+
+    </div>
+
+</section>
+<section class="stackly-services" id="services">
+
+    <div class="services-container">
+
+        <div class="services-header">
+
+            <div class="services-label">
+                <span class="services-label-dot"></span>
+                <span>SERVICES</span>
+            </div>
+
+            <div class="services-heading">
+                <span>OUR</span>
+                <strong>CAPABILITIES.</strong>
+            </div>
+            
+
+            <a href="error.html" class="services-more">
+                <span>SEE MORE</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+        <br>
+
+
+        <div class="services-grid">
+
+
+            <article class="service-card service-card-dark">
+
+                <div class="service-card-number">
+                    01
+                </div>
+
+                <div class="service-card-content">
+
+                    <h3>
+                        Digital Marketing
+                        <br>
+                        & Identity
+                    </h3>
+
+                    <p>
+                        Maximise your online presence with
+                        performance-driven digital marketing
+                        services.
+                    </p>
+
+                </div>
+
+                <div class="service-visual visual-marketing">
+
+                    <div class="visual-shape visual-shape-a"></div>
+
+                    <div class="visual-shape visual-shape-b"></div>
+
+                    <div class="visual-shape visual-shape-c"></div>
+
+                </div>
+
+                <a href="error.html" class="service-link">
+                    <span>KNOW MORE</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="service-card service-card-light">
+
+                <div class="service-card-number">
+                    02
+                </div>
+
+                <div class="service-card-content">
+
+                    <h3>
+                        Product Design
+                        <br>
+                        & Branding
+                    </h3>
+
+                    <p>
+                        Build your physical or digital product
+                        from concept to market reality,
+                        ensuring it looks beautiful.
+                    </p>
+
+                </div>
+
+                <div class="service-visual visual-product">
+
+                    <div class="product-loop"></div>
+
+                    <div class="product-orbit orbit-product-one"></div>
+
+                    <div class="product-orbit orbit-product-two"></div>
+
+                </div>
+
+                <a href="error.html" class="service-link">
+                    <span>KNOW MORE</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="service-card service-card-dark service-card-third">
+
+                <div class="service-card-number">
+                    03
+                </div>
+
+                <div class="service-card-content">
+
+                    <h3>
+                        Search Engine
+                        <br>
+                        Optimization
+                    </h3>
+
+                    <p>
+                        Optimise your website's structure,
+                        content and organic search rankings
+                        to scale revenue.
+                    </p>
+
+                </div>
+
+                <div class="service-visual visual-seo">
+
+                    <div class="seo-cube cube-one"></div>
+                    <div class="seo-cube cube-two"></div>
+                    <div class="seo-cube cube-three"></div>
+                    <div class="seo-cube cube-four"></div>
+
+                </div>
+
+                <a href="error.html" class="service-link">
+                    <span>KNOW MORE</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="service-card service-card-dark service-card-four">
+
+                <div class="service-card-number">
+                    04
+                </div>
+
+                <div class="service-card-content">
+
+                    <h3>
+                        Web Experience
+                        <br>
+                        & Development
+                    </h3>
+
+                    <p>
+                        High-performance digital experiences
+                        built with strategy, interaction and
+                        scalable technology.
+                    </p>
+
+                </div>
+
+                <div class="service-visual visual-web">
+
+                    <div class="web-orb"></div>
+                    <div class="web-ring web-ring-one"></div>
+                    <div class="web-ring web-ring-two"></div>
+
+                </div>
+
+                <a href="error.html" class="service-link">
+                    <span>KNOW MORE</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+        </div>
+
+
+        <div class="services-bottom">
+
+            <span>STACKLY / WHAT WE DO</span>
+
+            <div class="services-bottom-line"></div>
+
+            <span>04 SERVICES</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="what-we-do" id="whatWeDo">
+
+    <div class="what-we-do-bg">
+        <div class="what-we-do-grid"></div>
+        <div class="what-we-do-glow"></div>
+        <div class="what-we-do-outline">SERVICES</div>
+    </div>
+
+    <div class="what-we-do-container">
+
+        <div class="what-we-do-top">
+
+            <div class="what-we-do-label">
+                <span class="what-we-do-dot"></span>
+                <span>WHAT WE DO</span>
+            </div>
+
+            <div class="what-we-do-number">
+                01 / 04
+            </div>
+
+        </div>
+
+        <div class="what-we-do-heading-wrap">
+
+            <h2 class="what-we-do-heading">
+                WE CREATE
+                <span>MEANINGFUL</span>
+                EXPERIENCES.
+            </h2>
+
+            <p class="what-we-do-intro">
+                We combine strategy, design, technology and motion
+                to create digital experiences that make brands
+                impossible to ignore.
+            </p>
+
+        </div>
+
+        <div class="what-we-do-services">
+
+            <article class="what-service active">
+
+                <div class="what-service-top">
+                    <span>01</span>
+
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </div>
+
+                <div class="what-service-icon">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+
+                <h3>
+                    BRAND
+                    <span>IDENTITY</span>
+                </h3>
+
+                <p>
+                    Positioning, identity systems and visual
+                    languages built for memorable brands.
+                </p>
+
+                <div class="what-service-line"></div>
+
+            </article>
+
+            <article class="what-service">
+
+                <div class="what-service-top">
+                    <span>02</span>
+
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </div>
+
+                <div class="what-service-icon">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+
+                <h3>
+                    DIGITAL
+                    <span>EXPERIENCES</span>
+                </h3>
+
+                <p>
+                    High-performance websites and digital
+                    products designed around real people.
+                </p>
+
+                <div class="what-service-line"></div>
+
+            </article>
+
+            <article class="what-service">
+
+                <div class="what-service-top">
+                    <span>03</span>
+
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </div>
+
+                <div class="what-service-icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <h3>
+                    DIGITAL
+                    <span>MARKETING</span>
+                </h3>
+
+                <p>
+                    Creative campaigns and growth strategies
+                    designed to turn attention into action.
+                </p>
+
+                <div class="what-service-line"></div>
+
+            </article>
+
+            <article class="what-service">
+
+                <div class="what-service-top">
+                    <span>04</span>
+
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </div>
+
+                <div class="what-service-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+
+                <h3>
+                    MOTION
+                    <span>& 3D</span>
+                </h3>
+
+                <p>
+                    Immersive motion systems, 3D visuals and
+                    interactive experiences with attitude.
+                </p>
+
+                <div class="what-service-line"></div>
+
+            </article>
+
+        </div>
+
+        <div class="what-we-do-bottom">
+
+            <span>STRATEGY</span>
+            <span>DESIGN</span>
+            <span>DEVELOPMENT</span>
+            <span>MOTION</span>
+            <span>GROWTH</span>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="featured-work" id="work">
+
+    <div class="featured-work-bg">
+        <div class="featured-work-grid"></div>
+        <div class="featured-work-glow"></div>
+        <span class="featured-work-bg-text">WORK</span>
+    </div>
+
+    <div class="featured-work-container">
+
+        <div class="featured-work-header">
+
+            <div class="featured-work-label">
+                <span class="featured-work-dot"></span>
+                <span>SELECTED WORK</span>
+            </div>
+
+            <div class="featured-work-count">
+                04 PROJECTS
+            </div>
+
+        </div>
+
+        <div class="featured-work-title-wrap">
+
+            <h2 class="featured-work-title">
+                WORK THAT
+                <span>MAKES</span>
+                NOISE.
+            </h2>
+
+            <p class="featured-work-intro">
+                A selection of identities, digital products and
+                experiences created for ambitious brands.
+            </p>
+
+        </div>
+
+        <div class="featured-projects">
+
+            <a href="error.html" class="featured-project featured-project-large">
+
+                <div class="featured-project-image">
+                    <img
+                        src="Assest/home4.webp"
+                        alt="Brand identity project"
+                    >
+                </div>
+
+                <div class="featured-project-overlay"></div>
+
+                <div class="featured-project-info">
+
+                    <div>
+                        <span class="featured-project-index">01</span>
+                        <h3>Brand<br>Evolution</h3>
+                    </div>
+
+                    <div class="featured-project-tags">
+                        <span>BRANDING</span>
+                        <span>IDENTITY</span>
+                    </div>
+
+                </div>
+
+                <span class="featured-project-arrow">
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </span>
+
+            </a>
+
+            <a href="error.html" class="featured-project featured-project-small">
+
+                <div class="featured-project-image">
+                    <img
+                        src="Assest/home3.webp"
+                        alt="Digital experience project"
+                    >
+                </div>
+
+                <div class="featured-project-overlay"></div>
+
+                <div class="featured-project-info">
+
+                    <div>
+                        <span class="featured-project-index">02</span>
+                        <h3>Digital<br>Culture</h3>
+                    </div>
+
+                    <div class="featured-project-tags">
+                        <span>WEB</span>
+                        <span>UX/UI</span>
+                    </div>
+
+                </div>
+
+                <span class="featured-project-arrow">
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </span>
+
+            </a>
+
+            <a href="error.html" class="featured-project featured-project-small">
+
+                <div class="featured-project-image">
+                    <img
+                        src="Assest/home2.webp"
+                        alt="Creative 3D project"
+                    >
+                </div>
+
+                <div class="featured-project-overlay"></div>
+
+                <div class="featured-project-info">
+
+                    <div>
+                        <span class="featured-project-index">03</span>
+                        <h3>Future<br>Objects</h3>
+                    </div>
+
+                    <div class="featured-project-tags">
+                        <span>3D</span>
+                        <span>MOTION</span>
+                    </div>
+
+                </div>
+
+                <span class="featured-project-arrow">
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </span>
+
+            </a>
+
+            <a href="error.html" class="featured-project featured-project-large">
+
+                <div class="featured-project-image">
+                    <img
+                        src="Assest/home1.webp"
+                        alt="Creative campaign project"
+                    >
+                </div>
+
+                <div class="featured-project-overlay"></div>
+
+                <div class="featured-project-info">
+
+                    <div>
+                        <span class="featured-project-index">04</span>
+                        <h3>New<br>Perspective</h3>
+                    </div>
+
+                    <div class="featured-project-tags">
+                        <span>CAMPAIGN</span>
+                        <span>DIGITAL</span>
+                    </div>
+
+                </div>
+
+                <span class="featured-project-arrow">
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </span>
+
+            </a>
+
+        </div>
+
+        <div class="featured-work-footer">
+
+            <span>FROM CONCEPT</span>
+
+            <div class="featured-work-line"></div>
+
+            <span>TO IMPACT</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="premium-clients" id="clients">
+
+    <div class="premium-clients-bg-text">TRUSTED</div>
+
+    <div class="premium-clients-container">
+
+        <div class="premium-clients-header">
+            <div class="premium-clients-eyebrow">
+                <span class="premium-clients-line"></span>
+                <span>SELECTED CLIENTS</span>
+            </div>
+
+            <div class="premium-clients-heading-wrap">
+                <h2 class="premium-clients-title">
+                    BUILT WITH
+                    <span>AMBITIOUS BRANDS.</span>
+                </h2>
+
+                <p class="premium-clients-intro">
+                    We partner with forward-thinking companies to create
+                    brands, digital products and experiences that move
+                    businesses forward.
+                </p>
+            </div>
+        </div>
+
+        <div class="premium-clients-grid">
+
+            <a href="error.html" class="premium-client-card">
+                <div class="premium-client-top">
+                    <span class="premium-client-number">01</span>
+
+                    <span class="premium-client-category">
+                        TECHNOLOGY
+                    </span>
+
+                    <span class="premium-client-arrow">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </div>
+
+                <div class="premium-client-name">
+                    NEXORA
+                </div>
+
+                <div class="premium-client-bottom">
+                    <span>BRAND STRATEGY</span>
+                    <span>DIGITAL EXPERIENCE</span>
+                </div>
+            </a>
+
+            <a href="error.html" class="premium-client-card premium-client-dark">
+                <div class="premium-client-top">
+                    <span class="premium-client-number">02</span>
+
+                    <span class="premium-client-category">
+                        FASHION
+                    </span>
+
+                    <span class="premium-client-arrow">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </div>
+
+                <div class="premium-client-name">
+                    MONOFORM
+                </div>
+
+                <div class="premium-client-bottom">
+                    <span>CREATIVE DIRECTION</span>
+                    <span>IDENTITY</span>
+                </div>
+            </a>
+
+            <a href="error.html" class="premium-client-card">
+                <div class="premium-client-top">
+                    <span class="premium-client-number">03</span>
+
+                    <span class="premium-client-category">
+                        FINANCE
+                    </span>
+
+                    <span class="premium-client-arrow">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </div>
+
+                <div class="premium-client-name">
+                    VERTEX
+                </div>
+
+                <div class="premium-client-bottom">
+                    <span>PRODUCT DESIGN</span>
+                    <span>WEB DEVELOPMENT</span>
+                </div>
+            </a>
+
+            <a href="error.html" class="premium-client-card premium-client-dark">
+                <div class="premium-client-top">
+                    <span class="premium-client-number">04</span>
+
+                    <span class="premium-client-category">
+                        LIFESTYLE
+                    </span>
+
+                    <span class="premium-client-arrow">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </div>
+
+                <div class="premium-client-name">
+                    AETHER
+                </div>
+
+                <div class="premium-client-bottom">
+                    <span>ART DIRECTION</span>
+                    <span>CAMPAIGN</span>
+                </div>
+            </a>
+
+            <a href="error.html" class="premium-client-card premium-client-featured">
+                <div class="premium-client-top">
+                    <span class="premium-client-number">05</span>
+
+                    <span class="premium-client-category">
+                        CULTURE
+                    </span>
+
+                    <span class="premium-client-arrow">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </div>
+
+                <div class="premium-client-name">
+                    KINETIC
+                </div>
+
+                <div class="premium-client-bottom">
+                    <span>MOTION & 3D</span>
+                    <span>EXPERIENCE</span>
+                </div>
+            </a>
+
+            <div class="premium-clients-statement">
+                <div class="premium-statement-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <p>
+                    YOUR BRAND
+                    <span>COULD BE HERE.</span>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="premium-clients-footer">
+            <div class="premium-footer-meta">
+                <span>05</span>
+                <span>GLOBAL PARTNERSHIPS</span>
+            </div>
+
+            <div class="premium-footer-note">
+                <i class="fa-solid fa-arrow-down"></i>
+                <span>SCROLL TO EXPLORE</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="stackly-testimonials" id="testimonials">
+
+    <div class="stackly-testimonials-noise"></div>
+
+    <div class="stackly-testimonials-wrap">
+
+        <div class="stackly-testimonials-head">
+
+            <div class="stackly-testimonials-label">
+                <span></span>
+                CLIENT VOICES
+            </div>
+
+            <div class="stackly-testimonials-count">
+                04 / 04
+            </div>
+
+        </div>
+
+        <div class="stackly-testimonials-title-area">
+
+            <h2>
+                THEY
+                <em>SPEAK.</em>
+                WE LISTEN.
+            </h2>
+
+            <p>
+                The strongest work comes from genuine collaboration,
+                clear thinking and ambitious partnerships.
+            </p>
+
+        </div>
+
+        <div class="stackly-testimonial-stage">
+
+            <div class="stackly-testimonial-main">
+
+                <div class="stackly-testimonial-mark">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+
+                <div class="stackly-testimonial-main-content">
+
+                    <div class="stackly-testimonial-main-number">
+                        01
+                    </div>
+
+                    <blockquote id="testimonialQuote">
+                        They transformed our entire digital presence.
+                        The result feels bold, intelligent and completely us.
+                    </blockquote>
+
+                    <div class="stackly-testimonial-author">
+
+                        <div class="stackly-testimonial-avatar" id="testimonialAvatar">
+                            AM
+                        </div>
+
+                        <div class="stackly-testimonial-author-info">
+                            <strong id="testimonialName">
+                                ALEX MORGAN
+                            </strong>
+
+                            <span id="testimonialRole">
+                                FOUNDER / NEXORA
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="stackly-testimonial-controls">
+
+                    <button
+                        type="button"
+                        class="testimonial-prev"
+                        aria-label="Previous testimonial"
+                    >
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="testimonial-next"
+                        aria-label="Next testimonial"
+                    >
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="stackly-testimonial-side">
+
+                <div class="stackly-testimonial-side-top">
+                    <span>SELECTED STORIES</span>
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </div>
+
+                <div class="stackly-testimonial-list">
+
+                    <button
+                        type="button"
+                        class="stackly-testimonial-nav active"
+                        data-index="0"
+                    >
+                        <span>01</span>
+                        <strong>NEXORA</strong>
+                        <small>TECHNOLOGY</small>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stackly-testimonial-nav"
+                        data-index="1"
+                    >
+                        <span>02</span>
+                        <strong>MONOFORM</strong>
+                        <small>FASHION</small>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stackly-testimonial-nav"
+                        data-index="2"
+                    >
+                        <span>03</span>
+                        <strong>VERTEX</strong>
+                        <small>FINANCE</small>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="stackly-testimonial-nav"
+                        data-index="3"
+                    >
+                        <span>04</span>
+                        <strong>AETHER</strong>
+                        <small>LIFESTYLE</small>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="stackly-testimonial-bottom">
+
+            <span>
+                <i class="fa-solid fa-circle"></i>
+                REAL CLIENT EXPERIENCES
+            </span>
+
+            <span>
+                STACKLY / PARTNERSHIPS
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="stackly-cta-newsletter" id="newsletter">
+
+    <div class="stackly-cta-orbit stackly-cta-orbit-one"></div>
+    <div class="stackly-cta-orbit stackly-cta-orbit-two"></div>
+
+    <div class="stackly-cta-wrap">
+
+        <div class="stackly-cta-top">
+
+            <div class="stackly-cta-label">
+                <span></span>
+                LET'S CREATE SOMETHING
+            </div>
+
+            <div class="stackly-cta-number">
+                06 / 06
+            </div>
+
+        </div>
+
+        <div class="stackly-cta-main">
+
+            <div class="stackly-cta-heading">
+
+                <span>HAVE AN</span>
+
+                <h2>
+                    IDEA?
+                </h2>
+
+                <span>LET'S MAKE IT</span>
+
+                <h2>
+                    REAL.
+                </h2>
+
+            </div>
+
+            <div class="stackly-cta-copy">
+
+                <p>
+                    Tell us what you're building, changing or imagining.
+                    We'll turn the right ideas into meaningful digital
+                    experiences.
+                </p>
+
+                <a href="contact.html" class="stackly-cta-button">
+                    <span>START A PROJECT</span>
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="stackly-newsletter">
+
+            <div class="stackly-newsletter-heading">
+
+                <div class="stackly-newsletter-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+
+                <div>
+                    <span>STAY IN THE LOOP</span>
+
+                    <h3>
+                        INSIDE
+                        <em>STACKLY.</em>
+                    </h3>
+                </div>
+
+            </div>
+
+            <div class="stackly-newsletter-form-wrap">
+
+                <p>
+                    Ideas, design inspiration and occasional updates.
+                    No noise. Just the good stuff.
+                </p>
+
+                <form class="stackly-newsletter-form" id="newsletterForm">
+
+                    <div class="stackly-newsletter-input">
+
+                        <input
+                            type="email"
+                            id="newsletterEmail"
+                            placeholder="ENTER YOUR EMAIL"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            aria-label="Subscribe to newsletter"
+                        >
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                    <small id="newsletterMessage"></small>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="stackly-cta-footer">
+
+            <span>
+                STACKLY / 2026
+            </span>
+
+            <span>
+                BUILT FOR THE BOLD
+            </span>
+
+            <span>
+                <i class="fa-solid fa-circle"></i>
+                AVAILABLE FOR SELECT PROJECTS
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="stackly-footer">
+
+    <div class="stackly-footer-glow"></div>
+
+    <div class="stackly-footer-container">
+        
+        <div class="stackly-footer-main">
+
+            <div class="stackly-footer-brand">
+
+                <a href="index.html" class="stackly-footer-logo">
+                    <img
+                        src="Assest/whitelogo.webp"
+                        alt="Stackly Logo"
+                    >
+                </a>
+
+                <p class="stackly-footer-description">
+                    We create meaningful brands, digital experiences
+                    and creative solutions for ambitious businesses.
+                </p>
+
+                <a href="contact.html" class="stackly-footer-cta">
+                    <span>START A CONVERSATION</span>
+                    <i class="fa-solid fa-arrow-up-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="stackly-footer-column">
+
+                <span class="stackly-footer-title">
+                    QUICK LINKS
+                </span>
+
+                <nav class="stackly-footer-links">
+
+                    <a href="index.html">
+                        <span>01</span>
+                        <span>Home</span>
+                    </a>
+
+                    <a href="about.html">
+                        <span>02</span>
+                        <span>About</span>
+                    </a>
+
+                    <a href="services.html">
+                        <span>03</span>
+                        <span>Services</span>
+                    </a>
+
+                    <a href="blog.html">
+                        <span>04</span>
+                        <span>Blog</span>
+                    </a>
+
+                    <a href="contact.html">
+                        <span>05</span>
+                        <span>Contact</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="stackly-footer-column">
+
+                <span class="stackly-footer-title">
+                    EXPLORE
+                </span>
+
+                <nav class="stackly-footer-links">
+
+                    <a href="error.html">
+                        <span>01</span>
+                        <span>Order</span>
+                    </a>
+
+                    <a href="error.html">
+                        <span>02</span>
+                        <span>Payment</span>
+                    </a>
+
+                    <a href="error.html">
+                        <span>03</span>
+                        <span>Our Work</span>
+                    </a>
+
+                    <a href="error.html">
+                        <span>04</span>
+                        <span>Careers</span>
+                    </a>
+
+                    <a href="error.html">
+                        <span>05</span>
+                        <span>Privacy</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="stackly-footer-column stackly-footer-contact">
+
+                <span class="stackly-footer-title">
+                    CONTACT
+                </span>
+
+                <a href="error.html">
+                    info@thestackly.com
+                </a>
+
+                <a href="error.html">
+                    +91 98765 43210
+                </a>
+
+                <p>
+                    Chennai, Tamil Nadu<br>
+                    India
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="stackly-footer-social-row">
+
+            <div class="stackly-footer-social-title">
+                FOLLOW THE JOURNEY
+            </div>
+
+            <div class="stackly-footer-social">
+
+                <a
+                    href="error.html"
+                    aria-label="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a
+                    href="error.html"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a
+                    href="error.html"
+                    aria-label="Dribbble"
+                >
+                    <i class="fa-brands fa-dribbble"></i>
+                </a>
+
+                <a
+                    href="error.html"
+                    aria-label="Behance"
+                >
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+
+                <a
+                    href="error.html"
+                    aria-label="X"
+                >
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="stackly-footer-bottom">
+
+            <div class="stackly-footer-copyright">
+                &copy;2026 STACKLY. ALL RIGHTS RESERVED.
+            </div>
+
+            <div class="stackly-footer-bottom-links">
+
+                <a href="error.html">
+                    Terms
+                </a>
+
+                <a href="error.html">
+                    Privacy
+                </a>
+
+                <a href="error.html">
+                    Cookies
+                </a>
+
+            </div>
+
+            <a
+                href="#"
+                class="stackly-footer-top"
+                id="stacklyBackTop"
+            >
+                <span>BACK TO TOP</span>
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
